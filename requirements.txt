@@ -1,0 +1,30 @@
+# Core Scientific & Numerical
+numpy>=1.26.0
+pandas>=2.1.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+
+# Deep Learning & Computer Vision
+torch>=2.2.0
+torchvision>=0.17.0
+opencv-python>=4.8.0
+onnx>=1.15.0
+onnxruntime>=1.17.0
+
+# Geospatial & Satellite Processing
+rasterio>=1.3.9
+geopandas>=0.14.2
+shapely>=2.0.2
+pyproj>=3.6.1
+
+# Visualization & Interactive Dashboard
+matplotlib>=3.8.0
+folium>=0.15.1
+streamlit>=1.31.0
+streamlit-folium>=0.18.0
+
+# Reporting & Documentation
+reportlab>=4.1.0
+
+# Development & Testing
+pytest>=8.0.0
