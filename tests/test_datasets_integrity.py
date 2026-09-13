@@ -142,3 +142,18 @@ def test_zenodo_sos_dataset_masks():
 
     assert len(train_masks) == 6455, f"Expected 6455 train masks, got {len(train_masks)}"
     assert len(val_masks) == 1615, f"Expected 1615 val masks, got {len(val_masks)}"
+
+def test_zenodo_sos_dataset_images():
+    """Verify Zenodo SOS Refined Dataset extracted images (Option A)."""
+    sos_dir = DATA_DIR / "sar_images" / "sos_dataset" / "images"
+    assert sos_dir.exists(), "SOS images directory missing"
+
+    train_imgs = list((sos_dir / "train").glob("*.png"))
+    val_imgs = list((sos_dir / "val").glob("*.png"))
+
+    assert len(train_imgs) == 6455, f"Expected 6455 train images, got {len(train_imgs)}"
+    assert len(val_imgs) == 1615, f"Expected 1615 val images, got {len(val_imgs)}"
+
+    # Verify a matching image and mask pair
+    sample_img = Image.open(train_imgs[0])
+    assert sample_img.size == (256, 256)
