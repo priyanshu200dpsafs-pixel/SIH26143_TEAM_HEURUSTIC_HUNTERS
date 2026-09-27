@@ -64,7 +64,7 @@ def test_synthetic_ais_scenario():
 
 def test_sentinel2_optical():
     """Verify Sentinel-2 L2A optical GeoTIFF has 4 bands and valid spatial metadata."""
-    import rasterio
+    rasterio = pytest.importorskip("rasterio")
 
     tif_file = DATA_DIR / "optical_images" / "sentinel2_l2a_mediterranean_fusion.tif"
     assert tif_file.exists(), "Sentinel-2 GeoTIFF missing"

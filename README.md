@@ -1,134 +1,133 @@
-# Maritime Oil Spill Detection and Vessel Attribution
+# AEGIS-SAR: Autonomous Maritime Oil Spill Intelligence & Vessel Attribution Platform
+### SIH Problem Statement 26143 — Deployable Production Operations Platform
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Framework: PyTorch](https://img.shields.io/badge/Framework-PyTorch-orange.svg)](https://pytorch.org/)
-[![UI: Streamlit](https://img.shields.io/badge/UI-Streamlit-red.svg)](https://streamlit.io/)
+[![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg)](https://fastapi.tiangolo.com/)
+[![React 18](https://img.shields.io/badge/React-18.3-61dafb.svg)](https://react.dev/)
+[![MapLibre GL](https://img.shields.io/badge/MapLibre_GL-4.7-38bdf8.svg)](https://maplibre.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-7.76M_Params-ee4c2c.svg)](https://pytorch.org/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ed.svg)](https://www.docker.com/)
+[![Tests](https://img.shields.io/badge/Tests-114%2F114_Passing-brightgreen.svg)]()
 
-An integrated forensic intelligence system designed to detect illicit maritime hydrocarbon spills via satellite remote sensing (SAR/optical), trace their hydrodynamic drift back to release points via Lagrangian hindcasting, identify offending ships using kinematic AIS trajectory analytics, and assemble automated legal evidence briefs.
+An integrated, mission-critical maritime surveillance and forensic intelligence web platform designed to detect illicit hydrocarbon spills at sea via Copernicus Sentinel-1 Synthetic Aperture Radar (SAR), calculate oceanographic Lagrangian hindcasts (Runge-Kutta 4th Order with Fay spreading age), reconstruct historical AIS vessel traffic, rank suspect vessels through multi-factor Bayesian attribution, execute counterfactual forward simulations, and assemble cryptographically sealed evidentiary dossiers adhering to international maritime law enforcement standards (UNCLOS and MARPOL 73/78 Annex I).
 
 ---
 
-## 🗂️ Folder Structure
+## 🌊 Primary Intelligence Workflow
 
-```text
-oil-spill-attribution/
-├── README.md                 # Project mission, setup instructions, and module execution
-├── requirements.txt          # Python dependencies (NumPy, PyTorch, GeoPandas, Streamlit, etc.)
-├── .gitignore                # Git exclusions (data tiles, model weights, venvs, reports)
-├── data/                     # Raw and sample datasets (git-ignored, structure preserved)
-│   ├── sar_images/           # Raw + sample Sentinel-1 SAR tiles (GRD GeoTIFF)
-│   ├── optical_images/       # Sentinel-2 MSI multispectral tiles (L2A)
-│   ├── ais/                  # AIS vessel trajectory data (CSV / Parquet / JSON)
-│   ├── ocean_currents/       # OSCAR / HYCOM hydrodynamic current velocity grids
-│   └── weather/              # ECMWF ERA5 10m surface wind velocity fields
-├── src/                      # Source code modules
-│   ├── detection/            # Satellite detection and spill characterization
-│   │   ├── sar_segmentation.py     # Sentinel-1 SAR dark patch segmentation model
-│   │   ├── optical_fusion.py       # Sentinel-2 multispectral cross-check (look-alike filter)
-│   │   └── spill_properties.py     # Area, elongation, perimeter, and Fay spreading age
-│   ├── drift_model/          # Hydrodynamic transport modeling
-│   │   ├── lagrangian_tracker.py   # Backward/forward Lagrangian particle drift (RK4)
-│   │   └── uncertainty.py          # Monte Carlo dispersion and uncertainty cone generation
-│   ├── ais_analysis/         # Maritime traffic intelligence
-│   │   ├── traffic_filter.py       # Spatial-temporal vessel filtering against drift cones
-│   │   ├── spoofing_detector.py    # Kinematic speed checks & dark transponder detection
-│   │   └── suspicion_scorer.py     # Multi-factor suspect vessel attribution ranking
-│   ├── reporting/            # Evidentiary brief generation
-│   │   └── generate_report.py      # Automated PDF "prosecutor's brief" compiler
-│   └── utils/                # Shared utilities
-│       └── geo_helpers.py          # Great-circle distance, bearings, and GeoJSON utilities
-├── models/                   # Serialized model checkpoints (.pt, .onnx)
-├── dashboard/                # Visual user interface
-│   └── app.py                # Interactive Streamlit dashboard
-├── notebooks/                # Prototyping and exploration
-│   └── exploration.ipynb     # Jupyter sandbox for data inspection & modeling experiments
-├── tests/                    # Automated testing suite
-│   ├── test_detection.py     # Tests for SAR/optical segmentation and geometry
-│   ├── test_drift.py         # Tests for Lagrangian drift and uncertainty cones
-│   ├── test_ais.py           # Tests for AIS filtering, spoofing, and scoring
-│   └── test_reporting.py     # Tests for PDF dossier generation
-└── docs/                     # Scientific and architectural documentation
-    ├── architecture.md       # Pipeline architecture, system diagram, and contracts
-    └── methodology.md        # Scientific references (CleanSeaNet, Fay spreading, NOAA GNOME)
+```
+MONITOR (Copernicus Sentinel-1 SAR OData Catalog & Live AOI Poller)
+   ↓
+DETECT (SARSARSegmentor 4-Class Deep Learning U-Net with 7.76M Weights)
+   ↓
+VALIDATE (Fay Spreading Age, Compactness Ratio & Sentinel-2 MSI Optical Fusion)
+   ↓
+HINDCAST (Lagrangian RK4 Particle Tracker with 3% ERA5 Windage, Coriolis & OSCAR Currents)
+   ↓
+CORRELATE AIS (Sliding Temporal Buffer, Kinematic Limits & Dark Vessel Anomaly Filtering)
+   ↓
+RANK CANDIDATES (Multi-Factor Bayesian Attribution: Spatial, Temporal, Trajectory, Draft)
+   ↓
+COUNTERFACTUAL (Forward Particle Perturbation Testing IoU Overlap with Observed Slick)
+   ↓
+FORECAST (Forward Ocean Transport Projecting 12h, 24h, and 48h Coastal Intersections)
+   ↓
+INVESTIGATE (3-Panel Interactive MapLibre GL Maritime Investigation Console)
+   ↓
+EXPORT EVIDENCE (Cryptographically Sealed Forensic Dossiers with SHA-256 Chain of Custody)
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start & Deployment
 
-### 1. Prerequisites
-- Python 3.10 to 3.13
-- Git
+### Option 1: Direct Local Execution (FastAPI + React)
 
-### 2. Virtual Environment Setup
-From the project root:
+1. **Activate Environment & Install Requirements**:
+   ```bash
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   pip install fastapi uvicorn websockets python-multipart httpx
+   ```
 
+2. **Build Frontend**:
+   ```bash
+   cd frontend
+   npm install
+   npm run build
+   cd ..
+   ```
+
+3. **Start Platform Service**:
+   ```bash
+   python -m uvicorn src.api.main:app --host 0.0.0.0 --port 8000
+   ```
+   Open your browser at **`http://localhost:8000`**.
+
+---
+
+### Option 2: Docker / Container Deployment
+
+1. **Configure Environment Variables**:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. **Launch with Docker Compose**:
+   ```bash
+   docker compose up --build -d
+   ```
+   The entire application will be compiled, containerized, and served at `http://localhost:8000`.
+
+---
+
+## 🖥️ Operational Routes & Capabilities
+
+The platform implements 10 production routes:
+
+| Route | View | Description | Key Functional Actions |
+| :--- | :--- | :--- | :--- |
+| **`/operations`** | Tactical Command Overview | Real-time maritime status, KPI cards (Active Watches, Incidents, Vessels, Scenes, Alerts), interactive MapLibre GL map. | Incident quick-select, live vessel inspect, map layer toggling, distance measurement. |
+| **`/watch`** | Continuous Surveillance Watch | Autonomous background surveillance loop monitoring configured AOI for newly available Sentinel-1 scenes. | Start/Stop watch, Pause/Resume, Run Once, update AOI coordinates, configure polling intervals. |
+| **`/incidents`** | Forensic Incident Registry | Filterable registry of confirmed spills with morphological properties, confidence tiers, and primary suspects. | Multi-factor filtering, search, pagination, Export JSON, Export GeoJSON. |
+| **`/incidents/:id`** | Investigation Workspace | Mission-critical forensic investigation console with 3-panel layout (Morphology, MapLibre Layers, Attribution Scorecard, Evidence Timeline). | Rerun analysis, recompute hindcast, re-correlate AIS, run counterfactual test, forward forecast, export dossiers. |
+| **`/satellite`** | SAR Catalog & Ingestion | Real Sentinel-1 catalog search against Copernicus OData (CDSE). | Search by AOI/date, product metadata inspection, download scene, validate GeoTIFF raster, trigger incident pipeline. |
+| **`/ais`** | Vessel Traffic & Telemetry | Live sliding buffer of maritime traffic with kinematic anomaly detection. | Connection test, buffer lookback adjustment, vessel detail modal, full trajectory map, GeoJSON track export. |
+| **`/analysis`** | Attribution Workspace | Multi-factor scorecard decomposition comparing suspect vessels against release origins. | Radar/bar score breakdown, wind/current perturbation sliders, counterfactual forward simulation. |
+| **`/reports`** | Forensic Briefs & Dossiers | UNCLOS/MARPOL admissible evidentiary packages with cryptographic chain of custody. | View brief in browser, download HTML/JSON packages, verify SHA-256 seal against disk. |
+| **`/settings`** | Platform Settings | Surveillance AOI bounds, polling intervals, forecast horizon, and external provider authentication status. | Edit and persist configuration parameters. Secrets are strictly masked. |
+| **`/system`** | System Diagnostics | Infrastructure health checks, PyTorch device status, U-Net weights verification, active async jobs, and immutable audit trail. | Live health checks, active worker monitoring, audit log viewer. |
+
+---
+
+## 🔒 Strict Data Provenance Philosophy
+
+To prevent deceptive mockups or fabricated data:
+- Every number, slick area, ship coordinate, and probability cone is computed by real backend Python engines.
+- Every metric and visualization carries an explicit provenance tag:
+  - `REAL`: Direct empirical observation (e.g. Sentinel-1 SAR acquisition, verified AIS message).
+  - `INFERRED`: Derived scientific computation (e.g. U-Net segmentation, Lagrangian RK4 hindcast origin).
+  - `SIMULATED`: Counterfactual forward drift test or forecast projection.
+  - `UNAVAILABLE`: Honestly reported when external provider credentials are not configured or data is stale.
+
+---
+
+## 🧪 Automated Testing & Verification
+
+Run the complete 114-test automated suite:
 ```bash
-# Activate the pre-created virtual environment
-source .venv/bin/activate
-
-# Install project dependencies
-pip install -r requirements.txt
+pytest -v
 ```
+
+- **103 Baseline Tests**: Validating physics (ERA5 windage, Fay spreading, OSCAR currents), U-Net weights (7.76M params), Lagrangian tracking, kinematics, and Bayesian attribution.
+- **10 Platform API Tests** (`tests/test_api_platform.py`): Validating all REST endpoints, async jobs, and WebSocket integration.
+- **1 E2E Acceptance Test** (`tests/test_e2e_platform_flow.py`): Validating the complete 16-step operational workflow.
 
 ---
 
-## 🛠️ How to Run Each Module
+## ⚖️ Regulatory & Legal Compliance
 
-### 1. Launch the Interactive Dashboard
-Launch the multi-stage operational web dashboard:
-```bash
-streamlit run dashboard/app.py
-```
-This launches a browser interface allowing you to:
-- Inspect detected SAR slicks and optical confirmation.
-- Configure and simulate backward Lagrangian drift particle trajectories.
-- View ranked suspect vessels and AIS dark window anomalies.
-- Generate and download PDF prosecutor's dossiers.
-
-### 2. Run Individual Modules via Python
-All modules are organized under the `src` package. You can import and invoke them in Python scripts or interactive sessions:
-
-```python
-# SAR Detection & Spill Properties
-from src.detection import SARSARSegmentor, SpillPropertyExtractor
-segmentor = SARSARSegmentor(device="cpu")
-extractor = SpillPropertyExtractor(pixel_resolution_meters=10.0)
-
-# Lagrangian Drift Hindcasting
-from src.drift_model import LagrangianDriftTracker, UncertaintyConeGenerator
-tracker = LagrangianDriftTracker(windage_factor=0.031)
-
-# AIS Traffic Filtering & Scoring
-from src.ais_analysis import AISTrafficFilter, SpoofingDetector, SuspicionScorer
-scorer = SuspicionScorer()
-
-# Generate Prosecutor's Evidentiary Brief
-from src.reporting import ProsecutorBriefGenerator
-reporter = ProsecutorBriefGenerator(output_dir="reports")
-```
-
-### 3. Run Automated Tests
-Execute the unit test suite across all modules:
-```bash
-pytest tests/ -v
-```
-
-### 4. Interactive Data Prototyping
-Launch Jupyter to explore data, test algorithms, and visualize trajectories:
-```bash
-jupyter lab notebooks/exploration.ipynb
-```
-
----
-
-## 📚 References & Methodology
-Detailed scientific formulations and operational references are available in the `docs/` directory:
-- [Pipeline Architecture](docs/architecture.md): Data flows, interface contracts, and Mermaid pipeline diagram.
-- [Scientific Methodology](docs/methodology.md): EMSA CleanSeaNet detection standards, Fay spreading model equations, NOAA GNOME advection-diffusion formulations, and MARPOL evidentiary standards.
-
----
-
-## 📄 License
-This project is licensed under the MIT License.
+Forensic dossiers generated by AEGIS-SAR satisfy:
+- **UNCLOS Article 217 & 218**: Enforcement of international rules and port state jurisdiction.
+- **MARPOL 73/78 Annex I**: Regulations for the Prevention of Pollution by Oil.
+- **Cryptographic Chain of Custody**: Every compiled brief receives an SHA-256 seal recorded in `data/reports/reports_index.json` and `data/audit/audit_log.jsonl`.

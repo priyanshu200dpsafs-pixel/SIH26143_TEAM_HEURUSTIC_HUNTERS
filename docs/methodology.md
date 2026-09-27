@@ -78,14 +78,45 @@ For consecutive AIS message transmissions $p_i = (\phi_i, \lambda_i, t_i)$ and $
   $$v_{app} = \frac{D(p_i, p_{i+1})}{t_{i+1} - t_i}$$
 - If $v_{app} > v_{max}$ (e.g. $> 35\text{--}40\text{ knots}$ for cargo/tankers), an **AIS Teleportation / Spoofing Anomaly** is recorded.
 
-### 4.2 Multi-Factor Suspicion Index ($S$)
-Candidate vessels intersecting the dispersion cone are evaluated via multi-criteria weighting:
-$$S = w_{prox} \cdot \left(1 - \frac{d_{origin}}{d_{max}}\right) + w_{type} \cdot C_{vessel} + w_{gap} \cdot \mathbf{1}_{AIS\_blackout} + w_{draft} \cdot \Delta_{draft}$$
+### 4.2 Multi-Factor Suspicion Index ($)
+Candidate vessels intersecting the dispersion cone are evaluated via the normalized multi-criteria weighting implemented in `src/ais_analysis/suspicion_scorer.py`:
 
-- $w_{prox} = 0.35$: Minimum distance between vessel track and estimated release centroid.
-- $w_{type} = 0.25$: Vessel type risk weight (Crude Oil Tanker = 1.0, Chemical Tanker = 0.8, Cargo = 0.4, Pleasure Craft = 0.05).
-- $w_{gap} = 0.25$: Transponder blackout penalty during transit through the spill zone.
-- $w_{draft} = 0.15$: Normalized draft reduction indicating potential liquid cargo or ballast discharge.
+87184S = w'_p \cdot S_{\text{prox}} + w'_t \cdot S_{\text{type}} + w'_g \cdot S_{\text{gap}} + w'_d \cdot S_{\text{draft}}87184
+
+where weights are normalized to sum to 1.0:
+87184w'_k = rac{w_k}{\sum_{j \in \{p, t, g, d\}} w_j} \quad \text{with defaults: } w_p = 0.35, \, w_t = 0.25, \, w_g = 0.25, \, w_d = 0.1587184
+
+#### Implemented Scoring Components:
+1. **Spatiotemporal Proximity Component ({\text{prox}}$)**:
+   87184S_{\text{prox}} = 0.60 \cdot S_{\text{spatial}} + 0.40 \cdot S_{\text{temporal}}87184
+   - **Spatial Compatibility ({\text{spatial}}$)**:
+     87184S_{\text{spatial}} = \max\left(0, \, 1 - rac{d_{\min}}{d_{\max}}\right)87184
+     where {\min}$ is the minimum geodesic distance (nm) from the vessel track to the hindcast release centroid ({\max} = 5.0\text{ nm}$). If {\min} > d_{\max}$, {\text{spatial}} = 0.0$.
+   - **Temporal Compatibility ({\text{temporal}}$)**:
+     87184S_{\text{temporal}} = \max\left(0, \, 1 - rac{|t_{\text{transit}} - t_{\text{release}}|}{\Delta t_{\max}}\right)87184
+     bounded by the estimated hindcast release window ($\Delta t_{\max} = 12.0\text{ hours}$).
+
+2. **Vessel Prior Component ({\text{type}}$)**:
+   - {\text{type}} = 1.00$ for Crude Oil Tanker or Chemical Tanker.
+   - {\text{type}} = 0.60$ for General Cargo / Container vessel.
+   - {\text{type}} = 0.30$ for other vessel categories or unspecified types.
+
+3. **AIS Integrity Component ({\text{gap}}$)**:
+   - {\text{gap}} = 1.00$ if an AIS transmission gap $> 1800\text{ s}$ (\text{ min}$) occurs within .0\text{ nm}$ of the hindcast release centroid.
+   - {\text{gap}} = 0.50$ if an AIS transmission gap occurs outside the immediate spill vicinity.
+   - {\text{gap}} = 0.00$ for continuous, unimpeded broadcast.
+
+4. **Draft Reduction Component ({\text{draft}}$)**:
+   - {\text{draft}} = 1.00$ if reported vessel draft drops by $\Delta \text{draft} < -0.5\text{ m}$ along the track (indicative of bulk liquid cargo discharge or deballasting).
+   - {\text{draft}} = 0.20$ if vessel draft is unchanged or changes within normal operational tolerance ($\ge -0.5\text{ m}$).
+
+#### Gating & Exoneration Rules:
+* **Strict Spatial Disjointness**: If {\text{spatial}} = 0.0$, attribution is gated to **`EXONERATED_SPATIALLY_DISJOINT`** regardless of vessel prior or transponder gaps.
+* **Strict Temporal Incompatibility**: If {\text{temporal}} = 0.0$, attribution is gated to **`EXONERATED_TEMPORALLY_INCOMPATIBLE`**.
+* **Classification Thresholds**:
+  -  \ge 0.70$ and {\text{spatial}} \ge 0.80$ $\implies$ **`PRIMARY_SUSPECT`**
+  -  \ge 0.45$ $\implies$ **`PLAUSIBLE_CANDIDATE`**
+  -  < 0.45$ $\implies$ **`INSUFFICIENT_EVIDENCE_EXONERATED`**
 
 ---
 

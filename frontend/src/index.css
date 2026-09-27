@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F5F7FA;
+    color: #0F172A;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ─── Light-Theme Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #F1F5F9; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+/* ─── MapLibre Light Overrides ─── */
+.maplibregl-popup-content {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.12), 0 8px 10px -6px rgba(0,0,0,0.06) !important;
+  padding: 0 !important;
+  min-width: 260px;
+}
+.maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: #FFFFFF !important; }
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: #FFFFFF !important; }
+.maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: #FFFFFF !important; }
+.maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: #FFFFFF !important; }
+.maplibregl-popup-close-button {
+  color: #64748B !important;
+  font-size: 18px !important;
+  padding: 4px 8px !important;
+}
+.maplibregl-popup-close-button:hover { color: #0F172A !important; }
+
+.maplibregl-ctrl-group {
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.06) !important;
+  overflow: hidden;
+}
+.maplibregl-ctrl-group button {
+  border-bottom: 1px solid #F1F5F9 !important;
+  width: 36px !important;
+  height: 36px !important;
+}
+.maplibregl-ctrl-group button:last-child { border-bottom: none !important; }
+.maplibregl-ctrl-group button:hover { background-color: #F1F5F9 !important; }
+.maplibregl-ctrl-group button .maplibregl-ctrl-icon { filter: none !important; }
+.maplibregl-ctrl-attrib { font-size: 10px !important; }
+
+/* ─── Card Utility Classes ─── */
+.m-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+}
+.m-card:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+}
+.m-card-flat {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+}
+.m-panel {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+}
+
+/* ─── Subtle Animation ─── */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+
+/* ─── Status Dots ─── */
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.status-dot-live {
+  background: #059669;
+  box-shadow: 0 0 6px 2px rgba(5, 150, 105, 0.4);
+}
+.status-dot-replay { background: #0284C7; }
+.status-dot-disconnected { background: #94A3B8; }
+.status-dot-error { background: #DC2626; }

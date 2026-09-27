@@ -22,6 +22,14 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# Environment Variables & Secrets (CRITICAL FOR GITHUB)
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+!/.env.example
+
 # Virtual Environments
 .venv/
 venv/
@@ -29,6 +37,14 @@ ENV/
 env/
 env.bak/
 venv.bak/
+
+# Frontend / Node
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.vite/
+*.tsbuildinfo
 
 # Jupyter Notebooks
 .ipynb_checkpoints
@@ -60,3 +76,11 @@ reports/*.pdf
 *~
 .DS_Store
 Thumbs.db
+
+# Screenshots & Visual Test Artifacts
+*.png
+*.jpg
+*.jpeg
+!frontend/public/sar_inspection/*
+FINAL_SUBMISSION_IMAGES/
+tests/browser/

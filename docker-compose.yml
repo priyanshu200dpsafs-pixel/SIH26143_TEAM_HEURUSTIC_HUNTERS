@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  aegis-sar-platform:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aegis-sar-operations
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - CDSE_CLIENT_ID=${CDSE_CLIENT_ID:-}
+      - CDSE_CLIENT_SECRET=${CDSE_CLIENT_SECRET:-}
+      - COPERNICUS_API_KEY=${COPERNICUS_API_KEY:-}
+      - AIS_API_KEY=${AIS_API_KEY:-}
+    volumes:
+      - ./data/results:/app/data/results
+      - ./data/ledger:/app/data/ledger
+      - ./data/reports:/app/data/reports
+      - ./data/audit:/app/data/audit
+      - ./config:/app/config
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/system/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

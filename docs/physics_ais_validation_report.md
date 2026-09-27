@@ -3,6 +3,10 @@
 **Evaluation Date**: 2026-09-13  
 **Status**: All Scientific Validation Benchmarks Verified (100% Pass Rate Across 7 Adversarial Scenarios)
 
+> [!IMPORTANT]
+> **SCIENTIFIC CAVEAT**: The physics and AIS attribution results reported here are controlled benchmark results evaluated across synthetic adversarial scenarios, not validated real-incident performance. They do not constitute verified legal attribution for real-world historical events.
+
+
 ---
 
 ## 1. Particle Integration & Physics Engine Verification
@@ -43,6 +47,22 @@ The pure NumPy spatiotemporal interpolation engine ([`src/drift_model/environmen
 
 ## 3. Seven Adversarial AIS Benchmark Results
 
+### 3.1 Mathematical Suspicion Scoring Formula
+The suspicion engine implemented in [`src/ais_analysis/suspicion_scorer.py`](file:///Users/priyanshu/Desktop/oil-spill-attribution/src/ais_analysis/suspicion_scorer.py) computes candidate attribution scores via normalized multi-criteria weighting:
+
+87193S = w'_p \cdot (0.60 S_{\text{spatial}} + 0.40 S_{\text{temporal}}) + w'_t \cdot S_{\text{type}} + w'_g \cdot S_{\text{gap}} + w'_d \cdot S_{\text{draft}}87193
+
+where weights are normalized:
+87193w'_k = rac{w_k}{\sum w} \quad \text{with default weights: } w_p = 0.35, \, w_t = 0.25, \, w_g = 0.25, \, w_d = 0.1587193
+
+**Implemented Scoring Components:**
+* **$S_{\text{spatial}} = \max(0, 1 - d_{\min} / 5.0\text{ nm})$**: Geodesic proximity to hindcast release centroid. If $$d_{\min} > 5.0\text{ nm}$, $S_{\text{spatial}} = 0.0$ and vessel is automatically marked `EXONERATED_SPATIALLY_DISJOINT`.
+* **$S_{\text{temporal}} = \max(0, 1 - |\Delta t| / 12.0\text{ hr})$**: Transit coincidence with the backward hindcast release window.
+* **$S_{\text{type}}$**: Vessel prior (.00$ for Crude/Chemical Tanker, zsh.60$ for General Cargo/Container, zsh.30$ for other/unknown).
+* **$S_{\text{gap}}$**: AIS integrity (.00$ if transmission gap $> 1800\text{ s}$ occurs within .0\text{ nm}$ of spill; zsh.50$ if gap occurs elsewhere; zsh.00$ if continuous).
+* **$S_{\text{draft}}$**: Draft reduction (.00$ if $\Delta \text{draft} < -0.5\text{ m}$; zsh.20$ otherwise).
+
+### 3.2 Benchmark Evaluation Matrix
 The 7 blind scenarios defined in [`docs/synthetic_validation_scenarios.md`](file:///Users/priyanshu/Desktop/oil-spill-attribution/docs/synthetic_validation_scenarios.md) were evaluated by [`scripts/evaluate_all_benchmark_scenarios.py`](file:///Users/priyanshu/Desktop/oil-spill-attribution/scripts/evaluate_all_benchmark_scenarios.py). Ground truth was isolated in `ground_truth/` and withheld from the scoring algorithm.
 
 | # | Scenario Name | Top Candidate | Score | Attribution Decision | Ground Truth Identity | Outcome |

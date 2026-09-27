@@ -1,0 +1,26 @@
+# Continuous Maritime Watch Configuration
+
+watch:
+  enabled: true
+  polling_interval_minutes: 60
+
+region:
+  name: "Central Mediterranean Approaches"
+  bbox:
+    min_lon: 18.1
+    min_lat: 34.3
+    max_lon: 18.6
+    max_lat: 34.7
+
+satellite:
+  sentinel1:
+    enabled: true
+    collection: "SENTINEL-1"
+    product_type: "GRD"
+    max_scene_age_hours: 168
+
+processing:
+  auto_process_new_scene: true
+  auto_download: false
+  storage_dir: "data/satellite/sentinel1"
+  ledger_path: "data/ledger/ingestion_ledger.json"

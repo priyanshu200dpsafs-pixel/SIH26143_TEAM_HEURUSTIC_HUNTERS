@@ -1,0 +1,35 @@
+# AIS Configuration for Maritime Surveillance and Spill Attribution
+
+provider:
+  mode: replay  # 'replay', 'live', or 'historical'
+  historical_provider: gfw  # 'gfw' or 'local'
+
+replay:
+  enabled: true
+  benchmark_dir: "data/ais/synthetic/benchmarks"
+  default_scenario: 1
+
+live:
+  enabled: true
+  provider: "aisstream"
+  endpoint: "wss://stream.aisstream.io/v0/stream"
+  api_key_env: "AISSTREAM_API_KEY"
+  timeout_seconds: 15
+
+historical:
+  enabled: true
+  provider: "gfw"
+  endpoint: "https://gateway.api.globalfishingwatch.org/v3"
+  api_key_env: "GFW_API_TOKEN"
+  timeout_seconds: 15
+
+buffer:
+  hours: 48
+  minimum_track_points: 3
+  maximum_gap_minutes: 30
+
+query:
+  max_vessel_distance_km: 100
+  lookback_hours: 72
+  temporal_buffer_hours: 4.0
+  spatial_buffer_deg: 0.5
