@@ -181,18 +181,19 @@ function generateEnvironmentalVectors(
   wSpeed: number = 3.1
 ) {
   const features: any[] = [];
-  const lonMin = centerLon - 0.80;
-  const lonMax = centerLon + 0.80;
-  const latMin = centerLat - 0.60;
-  const latMax = centerLat + 0.60;
-  const stepLon = 0.22;
-  const stepLat = 0.18;
+  // Tightly bounded around the active incident center (within ~25-30 km)
+  const lonMin = centerLon - 0.24;
+  const lonMax = centerLon + 0.24;
+  const latMin = centerLat - 0.18;
+  const latMax = centerLat + 0.18;
+  const stepLon = 0.12;
+  const stepLat = 0.09;
 
   for (let x = lonMin; x <= lonMax; x += stepLon) {
     for (let y = latMin; y <= latMax; y += stepLat) {
       // OSCAR Ocean Current: real advective vector
       const currentAngle = currAngle + Math.sin(x * 5 + y * 5) * 3;
-      const currentLen = Math.max(0.06, Math.min(0.12, (currSpeed / 0.2) * 0.085));
+      const currentLen = Math.max(0.04, Math.min(0.08, (currSpeed / 0.2) * 0.06));
       const cRad = (currentAngle * Math.PI) / 180;
       const cEndLon = x + currentLen * Math.sin(cRad);
       const cEndLat = y + currentLen * Math.cos(cRad);
@@ -351,7 +352,7 @@ export const MapLibreView: React.FC<Props> = ({
   flyToCoords,
   vesselTrack,
   positionUnavailableMessage,
-  showOceanVectors = true,
+  showOceanVectors = false,
   showCounterfactualSwarm = false,
   counterfactualIou = 0.81,
   environmentalData,
@@ -626,15 +627,20 @@ export const MapLibreView: React.FC<Props> = ({
             'case',
             ['==', ['get', 'decision'], 'PRIMARY_SUSPECT'], '#DC2626',
             ['==', ['get', 'decision'], 'ATTRIBUTED'], '#DC2626',
+            ['==', ['get', 'decision'], 'PLAUSIBLE_CANDIDATE'], '#DC2626',
+            ['==', ['get', 'decision'], 'HIGH_CONSISTENCY'], '#DC2626',
             ['==', ['get', 'decision'], 'FLAGGED_REVIEW'], '#D97706',
+            ['>=', ['coalesce', ['get', 'composite_score'], 0], 0.5], '#DC2626',
             '#64748B',
           ],
           'line-width': [
             'case',
-            ['==', ['get', 'decision'], 'PRIMARY_SUSPECT'], 3.5,
-            ['==', ['get', 'decision'], 'ATTRIBUTED'], 3,
+            ['==', ['get', 'decision'], 'PRIMARY_SUSPECT'], 3.8,
+            ['==', ['get', 'decision'], 'ATTRIBUTED'], 3.5,
+            ['==', ['get', 'decision'], 'PLAUSIBLE_CANDIDATE'], 3.5,
             ['==', ['get', 'decision'], 'FLAGGED_REVIEW'], 2.5,
-            1.5,
+            ['>=', ['coalesce', ['get', 'composite_score'], 0], 0.5], 3.2,
+            1.8,
           ],
         },
       });
@@ -713,8 +719,8 @@ export const MapLibreView: React.FC<Props> = ({
         type: 'geojson',
         data: { type: 'FeatureCollection', features: [] },
         cluster: true,
-        clusterMaxZoom: 8,
-        clusterRadius: 35,
+        clusterMaxZoom: 6,
+        clusterRadius: 30,
       });
 
       /* Cluster circles */
@@ -848,6 +854,35 @@ export const MapLibreView: React.FC<Props> = ({
         }
       });
 
+      /* Measure Distance Line Source & Layers */
+      map.addSource('measure-source', {
+        type: 'geojson',
+        data: { type: 'FeatureCollection', features: [] },
+      });
+      map.addLayer({
+        id: 'measure-line',
+        type: 'line',
+        source: 'measure-source',
+        filter: ['==', '$type', 'LineString'],
+        paint: {
+          'line-color': '#0284C7',
+          'line-width': 3,
+          'line-dasharray': [3, 2],
+        },
+      });
+      map.addLayer({
+        id: 'measure-endpoints',
+        type: 'circle',
+        source: 'measure-source',
+        filter: ['==', '$type', 'Point'],
+        paint: {
+          'circle-radius': 5.5,
+          'circle-color': '#0284C7',
+          'circle-stroke-width': 2,
+          'circle-stroke-color': '#FFFFFF',
+        },
+      });
+
       map.on('click', 'spill-fill', (e) => {
         if (e.features && e.features[0] && onSelectFeature) {
           onSelectFeature(e.features[0].properties);
@@ -867,7 +902,8 @@ export const MapLibreView: React.FC<Props> = ({
       }
 
       map.on('error', (e: any) => {
-        if (e?.sourceId === 'basemap' || e?.error?.status === 404 || (typeof e?.error?.message === 'string' && e.error.message.includes('tile'))) {
+        // Only trigger on total style loading failures, not transient 404 tile misses in ocean areas
+        if (e?.error?.message && typeof e.error.message === 'string' && e.error.message.includes('Failed to load style')) {
           setBasemapError(true);
         }
       });
@@ -1210,21 +1246,87 @@ export const MapLibreView: React.FC<Props> = ({
     map.triggerRepaint();
   };
 
+  /* ─── Sync Measure Points to GeoJSON ─── */
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady) return;
+    const src = map.getSource('measure-source') as GeoJSONSource | undefined;
+    if (!src) return;
+    if (!measuring || measurePoints.length === 0) {
+      src.setData({ type: 'FeatureCollection', features: [] });
+      return;
+    }
+    const features: any[] = [];
+    measurePoints.forEach((pt, i) => {
+      features.push({
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: pt },
+        properties: { index: i },
+      });
+    });
+    if (measurePoints.length >= 2) {
+      features.push({
+        type: 'Feature',
+        geometry: { type: 'LineString', coordinates: measurePoints },
+        properties: {},
+      });
+    }
+    src.setData({ type: 'FeatureCollection', features });
+  }, [measurePoints, measuring, mapReady]);
+
+  /* ─── Fullscreen state sync ─── */
+  useEffect(() => {
+    const onFsChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+    document.addEventListener('fullscreenchange', onFsChange);
+    return () => document.removeEventListener('fullscreenchange', onFsChange);
+  }, []);
+
   /* ─── Fit helpers ─── */
   const fitAoi = () => {
     const map = mapRef.current;
-    if (!map || !aoiBbox) return;
-    map.fitBounds([[aoiBbox[0], aoiBbox[1]], [aoiBbox[2], aoiBbox[3]]], { padding: 60 });
+    if (!map) return;
+
+    // 1. If geojson has features, calculate bounding box
+    if (geojson && geojson.features && geojson.features.length > 0) {
+      let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+      const scanCoords = (coords: any) => {
+        if (!Array.isArray(coords)) return;
+        if (typeof coords[0] === 'number' && typeof coords[1] === 'number') {
+          minX = Math.min(minX, coords[0]);
+          maxX = Math.max(maxX, coords[0]);
+          minY = Math.min(minY, coords[1]);
+          maxY = Math.max(maxY, coords[1]);
+        } else {
+          coords.forEach(scanCoords);
+        }
+      };
+      geojson.features.forEach((f: any) => scanCoords(f.geometry?.coordinates));
+      if (minX !== Infinity && maxX - minX > 0.001) {
+        map.fitBounds([[minX, minY], [maxX, maxY]], { padding: 90, duration: 1200 });
+        return;
+      }
+    }
+
+    // 2. If flyToCoords is provided
+    if (flyToCoords) {
+      map.flyTo({ center: flyToCoords, zoom: 8.5, duration: 1200 });
+      return;
+    }
+
+    // 3. Fallback to aoiBbox
+    if (aoiBbox) {
+      map.fitBounds([[aoiBbox[0], aoiBbox[1]], [aoiBbox[2], aoiBbox[3]]], { padding: 60, duration: 1000 });
+    }
   };
 
   const toggleFullscreen = () => {
     if (!mapContainer.current) return;
     if (!document.fullscreenElement) {
-      mapContainer.current.requestFullscreen();
-      setIsFullscreen(true);
+      mapContainer.current.requestFullscreen().catch(() => {});
     } else {
-      document.exitFullscreen();
-      setIsFullscreen(false);
+      document.exitFullscreen().catch(() => {});
     }
   };
 
@@ -1248,7 +1350,10 @@ export const MapLibreView: React.FC<Props> = ({
 
       {/* ─── Layer Panel ─── */}
       {layersOpen && (
-        <div className="absolute top-3 left-14 z-20 w-64 bg-white border border-m-border rounded-lg shadow-popup p-3 space-y-3 animate-fade-in">
+        <div
+          style={{ left: '56px' }}
+          className="absolute top-3 z-30 w-72 bg-white border border-m-border rounded-xl shadow-2xl p-3.5 space-y-3 animate-fade-in"
+        >
           <div className="flex items-center justify-between border-b border-m-border pb-2">
             <span className="text-xs font-bold text-m-primary uppercase tracking-wider">Map Layers</span>
             <button onClick={() => setLayersOpen(false)} className="text-m-muted hover:text-m-primary"><X className="w-3.5 h-3.5" /></button>
@@ -1321,7 +1426,7 @@ export const MapLibreView: React.FC<Props> = ({
 
       {/* ─── On-Map Environmental Vector Compass HUD ─── */}
       {visibility.currents && (
-        <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-sm border border-slate-300 rounded-lg p-2.5 text-xs font-mono shadow-md flex flex-col gap-1 z-10 pointer-events-none">
+        <div className="absolute top-48 left-3 bg-white/95 backdrop-blur-sm border border-slate-300 rounded-lg p-2.5 text-xs font-mono shadow-md flex flex-col gap-1 z-10 pointer-events-none">
           <div className="flex items-center gap-1.5 font-bold text-slate-800 text-[11px] border-b border-slate-200 pb-1">
             <Compass className="w-3.5 h-3.5 text-blue-600" />
             <span>RK4 HYDRODYNAMIC ADVECTION VECTORS</span>
@@ -1388,18 +1493,7 @@ export const MapLibreView: React.FC<Props> = ({
         </button>
       </div>
 
-      {/* ─── Basemap Error / Position Warning Banners ─── */}
-      {basemapError && (
-        <div className="absolute top-3 left-1/2 -translate-x-1/2 z-30 bg-amber-600/95 text-white text-xs px-3.5 py-1.5 rounded-lg shadow-lg font-mono flex items-center gap-3">
-          <span>⚠️ BASEMAP UNAVAILABLE — Offline vector chart active</span>
-          <button
-            onClick={() => { setBasemapError(false); switchBasemap('topo'); }}
-            className="px-2 py-0.5 bg-white text-amber-900 rounded font-semibold text-[10px] hover:bg-amber-100"
-          >
-            Switch to Topo
-          </button>
-        </div>
-      )}
+
 
       {positionUnavailableMessage && (
         <div className="absolute top-12 left-1/2 -translate-x-1/2 z-30 bg-rose-600/95 text-white text-xs px-3.5 py-1.5 rounded-lg shadow-lg font-mono flex items-center gap-2">
@@ -1423,8 +1517,8 @@ export const MapLibreView: React.FC<Props> = ({
         </div>
       )}
 
-      {/* ─── Coordinate Readout ─── */}
-      <div className="absolute bottom-3 right-3 z-20 flex items-center gap-3 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-m-border text-[11px] font-mono text-m-secondary shadow-card">
+      {/* ─── Coordinate Readout (Positioned on bottom-left to avoid colliding with action buttons) ─── */}
+      <div className="absolute bottom-3 left-3 z-20 flex items-center gap-3 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-m-border text-[11px] font-mono text-m-secondary shadow-card">
         {mouseCoords ? (
           <div>
             LAT: <span className="text-m-primary font-semibold">{mouseCoords.lat > 0 ? `${mouseCoords.lat}°N` : `${Math.abs(mouseCoords.lat)}°S`}</span>
