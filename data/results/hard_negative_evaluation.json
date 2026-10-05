@@ -1,0 +1,35 @@
+{
+  "total_hard_negative_scenes": 175,
+  "total_lookalike_pixels_evaluated": 5017044,
+  "oil_false_positive_rate_on_lookalikes": 0.0047,
+  "lookalike_rejection_rate": 0.9953,
+  "oil_recall_on_hard_subset": 0.9861,
+  "oil_precision_on_hard_subset": 0.7172,
+  "hard_negative_confusion_matrix": [
+    [
+      60144,
+      178451,
+      183607,
+      40746
+    ],
+    [
+      5646,
+      3446139,
+      26819,
+      16213
+    ],
+    [
+      9794,
+      23410,
+      4965778,
+      18062
+    ],
+    [
+      12489,
+      1156724,
+      91006,
+      1233772
+    ]
+  ],
+  "headline_summary": "Hard-Negative Evaluation (175 scenes): Look-alike Rejection Rate = 99.53% | Oil False-Alarm Rate on Look-alikes = 0.47% | Oil Recall = 98.61% | Oil Precision = 71.72%"
+}

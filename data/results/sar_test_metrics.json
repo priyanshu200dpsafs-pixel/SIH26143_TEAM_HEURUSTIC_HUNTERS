@@ -1,0 +1,77 @@
+{
+  "overall_pixel_accuracy": 0.858,
+  "mean_iou": 0.5906,
+  "macro_f1": 0.6873,
+  "macro_precision": 0.8346,
+  "macro_recall": 0.6696,
+  "per_class_iou": {
+    "Background": 0.1127,
+    "Oil Spill": 0.7552,
+    "Look-alike / Others": 0.9266,
+    "Water / Sea Surface": 0.5677
+  },
+  "per_class_precision": {
+    "Background": 0.6836,
+    "Oil Spill": 0.7627,
+    "Look-alike / Others": 0.9356,
+    "Water / Sea Surface": 0.9565
+  },
+  "per_class_recall": {
+    "Background": 0.1189,
+    "Oil Spill": 0.987,
+    "Look-alike / Others": 0.9898,
+    "Water / Sea Surface": 0.5827
+  },
+  "per_class_f1": {
+    "Background": 0.2025,
+    "Oil Spill": 0.8605,
+    "Look-alike / Others": 0.9619,
+    "Water / Sea Surface": 0.7242
+  },
+  "per_class_support": {
+    "Background": 509759,
+    "Oil Spill": 4814914,
+    "Look-alike / Others": 5017044,
+    "Water / Sea Surface": 3289771
+  },
+  "mandatory_oil_lookalike_analysis": {
+    "oil_to_lookalike_pixels": 35857,
+    "oil_to_lookalike_rate": 0.0074,
+    "lookalike_to_oil_pixels": 23410,
+    "lookalike_to_oil_rate": 0.0047,
+    "lookalike_rejection_rate": 0.9953,
+    "headline_summary": "Oil->Lookalike: 0.74% (35857 px) | Lookalike->Oil: 0.47% (23410 px) | Lookalike Rejection Rate: 99.53%"
+  },
+  "confusion_matrix": [
+    [
+      60593.0,
+      205233.0,
+      195754.0,
+      48179.0
+    ],
+    [
+      5650.0,
+      4752447.0,
+      35857.0,
+      20960.0
+    ],
+    [
+      9794.0,
+      23410.0,
+      4965778.0,
+      18062.0
+    ],
+    [
+      12607.0,
+      1249619.0,
+      110456.0,
+      1917089.0
+    ]
+  ],
+  "class_order": [
+    "Background",
+    "Oil Spill",
+    "Look-alike / Others",
+    "Water / Sea Surface"
+  ]
+}

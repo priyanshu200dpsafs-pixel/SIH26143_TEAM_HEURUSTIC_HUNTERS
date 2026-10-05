@@ -1,0 +1,38 @@
+[
+  {
+    "case_id": "CASE_1",
+    "filename": "Oil (995).jpg",
+    "image_artifact": "docs/failure_analysis/failure_case_1_Oil (995).png",
+    "failure_mode": "Calm Water / Specular Sea False Alarm",
+    "fp_oil_pixels": 54799,
+    "fn_oil_pixels": 2433,
+    "analysis": "Very low wind calm water patch produced mirror-like specular reflection resembling oil slick."
+  },
+  {
+    "case_id": "CASE_2",
+    "filename": "Oil (1007).jpg",
+    "image_artifact": "docs/failure_analysis/failure_case_2_Oil (1007).png",
+    "failure_mode": "Fragmented / Low Contrast Slick Under-detection",
+    "fp_oil_pixels": 39026,
+    "fn_oil_pixels": 2433,
+    "analysis": "Weak radar backscatter contrast and narrow feathering caused false negative segmentation."
+  },
+  {
+    "case_id": "CASE_3",
+    "filename": "Oil (759).jpg",
+    "image_artifact": "docs/failure_analysis/failure_case_3_Oil (759).png",
+    "failure_mode": "Fragmented / Low Contrast Slick Under-detection",
+    "fp_oil_pixels": 34176,
+    "fn_oil_pixels": 2433,
+    "analysis": "Weak radar backscatter contrast and narrow feathering caused false negative segmentation."
+  },
+  {
+    "case_id": "CASE_4",
+    "filename": "Oil (758).jpg",
+    "image_artifact": "docs/failure_analysis/failure_case_4_Oil (758).png",
+    "failure_mode": "Look-alike Misclassification",
+    "fp_oil_pixels": 34149,
+    "fn_oil_pixels": 2433,
+    "analysis": "Low backscatter natural slick / biogenic film was misclassified as mineral hydrocarbon."
+  }
+]

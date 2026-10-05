@@ -57,13 +57,24 @@ htmlcov/
 .tox/
 .nox/
 
-# Heavy Data & Imagery (Ignore raw tiles, preserve folder structure)
+# Heavy Data & Imagery (Ignore raw training tiles, keep essential runtime data)
 data/*/*
 !data/*/.gitkeep
+!data/results/**
+!data/ledger/**
+!data/case_studies/**
+!data/weather/era5_wind_mediterranean_case_study.nc
+!data/ocean_currents/oscar_currents_final_20240823.nc
+!data/reports/**
+!data/satellite/**
+!data/ais/**
+!data/optical_images/sentinel2_l2a_mediterranean_fusion.tif
 
 # Model weights
 models/*
 !models/.gitkeep
+!models/sar_unet_config.json
+!models/sar_unet_baseline_best.pt
 
 # Reports output
 reports/*.pdf

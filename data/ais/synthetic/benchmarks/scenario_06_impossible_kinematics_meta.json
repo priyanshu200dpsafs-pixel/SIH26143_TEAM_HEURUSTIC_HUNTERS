@@ -1,0 +1,18 @@
+{
+  "scenario_id": 6,
+  "scenario_name": "impossible_kinematics",
+  "description": "A vessel presents spoofed or corrupted GPS data (>60 knots, teleportation jump).",
+  "vessel_count": 2,
+  "total_records": 434,
+  "start_time": "2024-08-22T18:00:00Z",
+  "end_time": "2024-08-23T12:00:00Z",
+  "ais_file": "scenario_06_impossible_kinematics_ais.csv",
+  "spill_observation": {
+    "observed_slick_centroid": [
+      18.35,
+      34.5
+    ],
+    "observation_time_iso": "2024-08-23T09:41:12Z",
+    "estimated_lookback_hours": 8.5
+  }
+}

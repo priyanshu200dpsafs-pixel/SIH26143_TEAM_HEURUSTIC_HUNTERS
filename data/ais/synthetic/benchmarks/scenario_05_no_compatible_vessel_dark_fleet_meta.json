@@ -1,0 +1,18 @@
+{
+  "scenario_id": 5,
+  "scenario_name": "no_compatible_vessel_dark_fleet",
+  "description": "Spill caused by an unflagged non-broadcasting dark vessel; zero legitimate AIS tracks enter the cone.",
+  "vessel_count": 3,
+  "total_records": 651,
+  "start_time": "2024-08-22T18:00:00Z",
+  "end_time": "2024-08-23T12:00:00Z",
+  "ais_file": "scenario_05_no_compatible_vessel_dark_fleet_ais.csv",
+  "spill_observation": {
+    "observed_slick_centroid": [
+      18.35,
+      34.5
+    ],
+    "observation_time_iso": "2024-08-23T09:41:12Z",
+    "estimated_lookback_hours": 8.5
+  }
+}

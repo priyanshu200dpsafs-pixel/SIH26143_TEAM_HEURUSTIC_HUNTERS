@@ -1,0 +1,274 @@
+{
+  "diagnostic_info": "Real vessel track sample processed by TrackBuilder, GapEngine, and Kinematics",
+  "source_dataset": "USCG Marine Cadastre Real Maritime Transponder Archive",
+  "provenance": "REAL",
+  "vessels_sample": [
+    {
+      "mmsi": "366940480",
+      "ship_name": "EARLY DAWN",
+      "ship_type": "1001",
+      "point_count": 363,
+      "start_time": "2017-01-04T11:34:37Z",
+      "end_time": "2017-01-05T00:21:36Z",
+      "gaps_detected": [
+        {
+          "mmsi": "366940480",
+          "gap_start": "2017-01-04T18:12:48Z",
+          "gap_end": "2017-01-04T20:20:45Z",
+          "gap_duration_minutes": 127.95,
+          "location_before": [
+            -175.6788,
+            52.2352
+          ],
+          "location_after": [
+            -176.25622,
+            52.14448
+          ],
+          "kinematic_context": {
+            "sog_before": 10.0,
+            "sog_after": 10.8,
+            "cog_before": null,
+            "cog_after": null
+          },
+          "source": "USCG_MarineCadastre_Real"
+        }
+      ],
+      "first_3_observations": [
+        {
+          "mmsi": "366940480",
+          "timestamp": "2017-01-04T11:34:37Z",
+          "latitude": 52.48788,
+          "longitude": -174.00034,
+          "sog": 10.3,
+          "cog": null,
+          "heading": 267.0,
+          "navigation_status": null,
+          "imo": "IMO7821130",
+          "ship_name": "EARLY DAWN",
+          "ship_type": "1001",
+          "length": 32.95,
+          "beam": null,
+          "draft": 4.0,
+          "source": "USCG_MarineCadastre_Real",
+          "data_status": "REAL",
+          "mode": "LIVE"
+        },
+        {
+          "mmsi": "366940480",
+          "timestamp": "2017-01-04T11:35:46Z",
+          "latitude": 52.48773,
+          "longitude": -174.00553,
+          "sog": 10.3,
+          "cog": null,
+          "heading": 269.0,
+          "navigation_status": null,
+          "imo": "IMO7821130",
+          "ship_name": "EARLY DAWN",
+          "ship_type": "1001",
+          "length": 32.95,
+          "beam": null,
+          "draft": 4.0,
+          "source": "USCG_MarineCadastre_Real",
+          "data_status": "REAL",
+          "mode": "LIVE"
+        },
+        {
+          "mmsi": "366940480",
+          "timestamp": "2017-01-04T11:37:16Z",
+          "latitude": 52.48759,
+          "longitude": -174.01249,
+          "sog": 10.1,
+          "cog": null,
+          "heading": 268.0,
+          "navigation_status": null,
+          "imo": "IMO7821130",
+          "ship_name": "EARLY DAWN",
+          "ship_type": "1001",
+          "length": 32.95,
+          "beam": null,
+          "draft": 4.0,
+          "source": "USCG_MarineCadastre_Real",
+          "data_status": "REAL",
+          "mode": "LIVE"
+        }
+      ],
+      "last_observation": {
+        "mmsi": "366940480",
+        "timestamp": "2017-01-05T00:21:36Z",
+        "latitude": 51.97718,
+        "longitude": -177.24075,
+        "sog": 10.2,
+        "cog": null,
+        "heading": 266.0,
+        "navigation_status": null,
+        "imo": "IMO7821130",
+        "ship_name": "EARLY DAWN",
+        "ship_type": "1001",
+        "length": 32.95,
+        "beam": null,
+        "draft": 4.0,
+        "source": "USCG_MarineCadastre_Real",
+        "data_status": "REAL",
+        "mode": "LIVE"
+      }
+    },
+    {
+      "mmsi": "477444700",
+      "ship_name": "JIANGMEN TRADER",
+      "ship_type": "1004",
+      "point_count": 32,
+      "start_time": "2017-01-02T03:10:09Z",
+      "end_time": "2017-01-02T05:58:10Z",
+      "gaps_detected": [
+        {
+          "mmsi": "477444700",
+          "gap_start": "2017-01-02T03:33:09Z",
+          "gap_end": "2017-01-02T04:50:10Z",
+          "gap_duration_minutes": 77.02,
+          "location_before": [
+            -179.26854,
+            52.08975
+          ],
+          "location_after": [
+            -179.39095,
+            51.91142
+          ],
+          "kinematic_context": {
+            "sog_before": 9.6,
+            "sog_after": 9.6,
+            "cog_before": 202.0,
+            "cog_after": 201.0
+          },
+          "source": "USCG_MarineCadastre_Real"
+        }
+      ],
+      "first_3_observations": [
+        {
+          "mmsi": "477444700",
+          "timestamp": "2017-01-02T03:10:09Z",
+          "latitude": 52.14268,
+          "longitude": -179.23239,
+          "sog": 8.4,
+          "cog": null,
+          "heading": 204.0,
+          "navigation_status": null,
+          "imo": "IMO9610664",
+          "ship_name": "JIANGMEN TRADER",
+          "ship_type": "1004",
+          "length": 179.9,
+          "beam": null,
+          "draft": 10.5,
+          "source": "USCG_MarineCadastre_Real",
+          "data_status": "REAL",
+          "mode": "LIVE"
+        },
+        {
+          "mmsi": "477444700",
+          "timestamp": "2017-01-02T03:12:40Z",
+          "latitude": 52.13734,
+          "longitude": -179.23589,
+          "sog": 8.2,
+          "cog": 201.0,
+          "heading": 202.0,
+          "navigation_status": null,
+          "imo": "IMO9610664",
+          "ship_name": "JIANGMEN TRADER",
+          "ship_type": "1004",
+          "length": 179.9,
+          "beam": null,
+          "draft": 10.5,
+          "source": "USCG_MarineCadastre_Real",
+          "data_status": "REAL",
+          "mode": "LIVE"
+        },
+        {
+          "mmsi": "477444700",
+          "timestamp": "2017-01-02T03:33:09Z",
+          "latitude": 52.08975,
+          "longitude": -179.26854,
+          "sog": 9.6,
+          "cog": 202.0,
+          "heading": 203.0,
+          "navigation_status": null,
+          "imo": "IMO9610664",
+          "ship_name": "JIANGMEN TRADER",
+          "ship_type": "1004",
+          "length": 179.9,
+          "beam": null,
+          "draft": 10.5,
+          "source": "USCG_MarineCadastre_Real",
+          "data_status": "REAL",
+          "mode": "LIVE"
+        }
+      ],
+      "last_observation": {
+        "mmsi": "477444700",
+        "timestamp": "2017-01-02T05:58:10Z",
+        "latitude": 51.74205,
+        "longitude": -179.50441,
+        "sog": 10.0,
+        "cog": 200.0,
+        "heading": 201.0,
+        "navigation_status": null,
+        "imo": "IMO9610664",
+        "ship_name": "JIANGMEN TRADER",
+        "ship_type": "1004",
+        "length": 179.9,
+        "beam": null,
+        "draft": 10.5,
+        "source": "USCG_MarineCadastre_Real",
+        "data_status": "REAL",
+        "mode": "LIVE"
+      }
+    },
+    {
+      "mmsi": "370024000",
+      "ship_name": "SANTA VISTA",
+      "ship_type": "1004",
+      "point_count": 1,
+      "start_time": "2017-01-03T05:41:52Z",
+      "end_time": "2017-01-03T05:41:52Z",
+      "gaps_detected": [],
+      "first_3_observations": [
+        {
+          "mmsi": "370024000",
+          "timestamp": "2017-01-03T05:41:52Z",
+          "latitude": 54.72279,
+          "longitude": -176.02681,
+          "sog": 10.2,
+          "cog": null,
+          "heading": 264.0,
+          "navigation_status": null,
+          "imo": "IMO9527946",
+          "ship_name": "SANTA VISTA",
+          "ship_type": "1004",
+          "length": 184.75,
+          "beam": null,
+          "draft": 10.0,
+          "source": "USCG_MarineCadastre_Real",
+          "data_status": "REAL",
+          "mode": "LIVE"
+        }
+      ],
+      "last_observation": {
+        "mmsi": "370024000",
+        "timestamp": "2017-01-03T05:41:52Z",
+        "latitude": 54.72279,
+        "longitude": -176.02681,
+        "sog": 10.2,
+        "cog": null,
+        "heading": 264.0,
+        "navigation_status": null,
+        "imo": "IMO9527946",
+        "ship_name": "SANTA VISTA",
+        "ship_type": "1004",
+        "length": 184.75,
+        "beam": null,
+        "draft": 10.0,
+        "source": "USCG_MarineCadastre_Real",
+        "data_status": "REAL",
+        "mode": "LIVE"
+      }
+    }
+  ]
+}

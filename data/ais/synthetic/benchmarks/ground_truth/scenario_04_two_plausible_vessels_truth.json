@@ -1,0 +1,13 @@
+{
+  "scenario_id": 4,
+  "scenario_name": "two_plausible_vessels",
+  "has_culprit_in_ais": true,
+  "ground_truth_culprit_mmsi": 240444001,
+  "ground_truth_culprit_name": "OLYMPIC PIONEER",
+  "release_time_iso": "2024-08-23T01:15:00Z",
+  "release_coord": [
+    18.353,
+    34.532
+  ],
+  "target_expected_outcome": "ATTRIBUTED_TO_CULPRIT"
+}

@@ -1,0 +1,13 @@
+{
+  "scenario_id": 5,
+  "scenario_name": "no_compatible_vessel_dark_fleet",
+  "has_culprit_in_ais": false,
+  "ground_truth_culprit_mmsi": null,
+  "ground_truth_culprit_name": "DARK_FLEET_NON_BROADCASTING",
+  "release_time_iso": "2024-08-23T01:15:00Z",
+  "release_coord": [
+    18.353,
+    34.532
+  ],
+  "target_expected_outcome": "EXONERATED_ALL_OR_UNATTRIBUTED"
+}

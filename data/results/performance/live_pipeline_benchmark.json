@@ -1,0 +1,17 @@
+{
+  "timestamp_utc": "2026-09-14T05:05:17Z",
+  "benchmark_environment": "macOS / Apple Silicon",
+  "sample_record_count": 1000,
+  "normalized_observation_count": 1000,
+  "unique_vessels_tracked": 4,
+  "latencies_ms": {
+    "catalog_query_latency_ms": 2146.56,
+    "ais_ingestion_latency_ms": 9.22,
+    "normalization_latency_ms": 144.75,
+    "track_construction_latency_ms": 206.59,
+    "candidate_filtering_latency_ms": 4.12,
+    "attribution_latency_ms": 14.97,
+    "total_pipeline_latency_ms": 2526.21
+  },
+  "throughput_records_per_sec": 6908.5
+}

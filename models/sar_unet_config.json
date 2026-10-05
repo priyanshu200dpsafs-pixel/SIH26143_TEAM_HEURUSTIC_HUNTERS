@@ -1,0 +1,52 @@
+{
+  "training_timestamp": "2026-09-13 09:06:58 UTC",
+  "random_seed": 42,
+  "package_versions": {
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "pillow": "12.3.0"
+  },
+  "dataset_identifiers": {
+    "name": "Krestenitis SAR Dataset",
+    "train_size": 672,
+    "val_size": 160,
+    "test_size": 208,
+    "target_size": [
+      256,
+      256
+    ],
+    "classes": {
+      "0": "Background",
+      "1": "Oil Spill",
+      "2": "Look-alike / Others",
+      "3": "Water / Sea Surface"
+    }
+  },
+  "architecture": {
+    "model_name": "UNetBaseline",
+    "channels": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "parameters_count": 7763140
+  },
+  "training_config": {
+    "epochs": 8,
+    "batch_size": 16,
+    "optimizer": "AdamW",
+    "initial_lr": 0.001,
+    "weight_decay": 0.0001,
+    "loss_function": "Weighted Cross-Entropy",
+    "class_weights": [
+      1.0,
+      3.5,
+      2.0,
+      1.0
+    ],
+    "device": "mps",
+    "training_duration_seconds": 554.98
+  }
+}

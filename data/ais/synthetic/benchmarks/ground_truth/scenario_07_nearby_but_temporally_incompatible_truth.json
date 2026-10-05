@@ -1,0 +1,13 @@
+{
+  "scenario_id": 7,
+  "scenario_name": "nearby_but_temporally_incompatible",
+  "has_culprit_in_ais": false,
+  "ground_truth_culprit_mmsi": null,
+  "ground_truth_culprit_name": "HISTORICAL_SPILL_UPSTREAM",
+  "release_time_iso": "2024-08-23T01:15:00Z",
+  "release_coord": [
+    18.353,
+    34.532
+  ],
+  "target_expected_outcome": "EXONERATED_ALL_OR_UNATTRIBUTED"
+}

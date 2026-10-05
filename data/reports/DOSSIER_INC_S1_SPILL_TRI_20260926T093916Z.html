@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prosecutor's Brief — INC_S1_SPILL_TRI</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      margin: 0;
+      padding: 32px 20px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 32px;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    .title {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #f8fafc;
+    }
+    .subtitle {
+      margin: 4px 0 0 0;
+      font-size: 13px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      padding: 16px;
+    }
+    .card-title {
+      margin: 0 0 12px 0;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #38bdf8;
+      font-weight: 700;
+    }
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 0;
+      border-bottom: 1px solid #1e293b;
+      font-size: 13px;
+    }
+    .metric-label {
+      color: #94a3b8;
+    }
+    .metric-value {
+      font-weight: 600;
+      color: #f1f5f9;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .badge-real { background: #065f46; color: #34d399; }
+    .badge-inferred { background: #1e3a8a; color: #60a5fa; }
+    .badge-simulated { background: #701a75; color: #f472b6; }
+    .badge-unavailable { background: #374151; color: #9ca3af; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+    th {
+      text-align: left;
+      padding: 8px;
+      background: #0f172a;
+      color: #94a3b8;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid #334155;
+    }
+    .seal {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid #334155;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1 class="title">MARITIME SPILL EVIDENTIARY DOSSIER</h1>
+        <p class="subtitle">UNCLOS / MARPOL 73/78 Annex I Admissible Forensic Brief</p>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 12px; color: #38bdf8; font-family: monospace; font-weight: 700;">DOSSIER_INC_S1_SPILL_TRI_20260926T093916Z</div>
+        <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Compiled: 2026-09-26T09:39:16.944863+00:00</div>
+      </div>
+    </div>
+
+    
+            <div style="background: #1e293b; border-left: 4px solid #38bdf8; padding: 12px 16px; margin: 20px 0; border-radius: 4px;">
+              <h4 style="margin: 0 0 6px 0; color: #38bdf8; font-size: 13px; text-transform: uppercase;">Operator Addendum</h4>
+              <p style="margin: 0; color: #cbd5e1; font-size: 13px;">API test brief</p>
+            </div>
+            
+
+    <div class="grid">
+      <!-- Incident Overview -->
+      <div class="card">
+        <h3 class="card-title">1. Incident Identification</h3>
+        <div class="metric-row">
+          <span class="metric-label">Incident ID</span>
+          <span class="metric-value">INC_S1_SPILL_TRI</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Region / AOI</span>
+          <span class="metric-value">Mediterranean Testbed</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Investigation Status</span>
+          <span class="metric-value" style="color: #38bdf8;">INCIDENT_READY</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Observation Timestamp</span>
+          <span class="metric-value">2024-08-23T09:41:12Z</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Observation Reality</span>
+          <span class="metric-value"><span class="badge badge-real">REAL</span></span>
+        </div>
+      </div>
+
+      <!-- Spill Properties -->
+      <div class="card">
+        <h3 class="card-title">2. SAR Slick Morphology</h3>
+        <div class="metric-row">
+          <span class="metric-label">Estimated Slick Area</span>
+          <span class="metric-value">0.00 km² (40 px)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Centroid Coordinates</span>
+          <span class="metric-value">18.1258°, 34.6985°</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Confidence Tier</span>
+          <span class="metric-value">MEDIUM (73.7%)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Fay Spreading Age</span>
+          <span class="metric-value">0.2 hours elapsed</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">SAR Detection Provenance</span>
+          <span class="metric-value"><span class="badge badge-real">INFERRED</span></span>
+        </div>
+      </div>
+
+      <!-- Environmental & Hindcast -->
+      <div class="card">
+        <h3 class="card-title">3. Environmental Physics & Hindcast</h3>
+        <div class="metric-row">
+          <span class="metric-label">Wind Velocity (ERA5)</span>
+          <span class="metric-value">0.0 m/s @ 38°</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Current Velocity (OSCAR)</span>
+          <span class="metric-value">0.00 m/s @ 0°</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Drift Engine</span>
+          <span class="metric-value">Lagrangian RK4 (3% windage + Coriolis)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Inferred Release Origin</span>
+          <span class="metric-value">18.1363°, 34.7184°</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Physics Reality</span>
+          <span class="metric-value"><span class="badge badge-inferred">INFERRED</span></span>
+        </div>
+      </div>
+
+      <!-- Primary Attributed Suspect -->
+      <div class="card" style="border-color: #38bdf8;">
+        <h3 class="card-title" style="color: #f59e0b;">4. Primary Attributed Vessel</h3>
+        <div class="metric-row">
+          <span class="metric-label">Vessel Identity</span>
+          <span class="metric-value">AEGEAN VOYAGER</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">MMSI / Type</span>
+          <span class="metric-value">240111001 (1004.0)</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Attribution Decision</span>
+          <span class="metric-value" style="color: #10b981; font-weight: 700;">PLAUSIBLE_CANDIDATE</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Composite Suspicion Score</span>
+          <span class="metric-value">0.625 / 1.000</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">AIS Provenance</span>
+          <span class="metric-value"><span class="badge badge-real">REAL</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Candidate Matrix -->
+    <div class="card" style="margin-bottom: 24px;">
+      <h3 class="card-title">5. Comprehensive Vessel Attribution Matrix (4 Vessels Evaluated)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Vessel Name</th>
+            <th>MMSI</th>
+            <th>Type</th>
+            <th>Composite Score</th>
+            <th>Min Distance</th>
+            <th>Forensic Finding</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">#1</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155; font-weight: 600;">AEGEAN VOYAGER</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><code>240111001</code></td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">1004.0</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><strong>0.625</strong></td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">15.33 nm</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><span style="background: #64748b; color: #000; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 11px;">PLAUSIBLE_CANDIDATE</span></td>
+            </tr>
+            
+            <tr>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">#2</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155; font-weight: 600;">CARGO PIONEER</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><code>240111002</code></td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">1001.0</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><strong>0.320</strong></td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">23.27 nm</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><span style="background: #64748b; color: #000; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 11px;">EXONERATED_SPATIALLY_DISJOINT</span></td>
+            </tr>
+            
+            <tr>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">#3</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155; font-weight: 600;">GAS TRADER</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><code>240111004</code></td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">1024.0</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><strong>0.395</strong></td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">31.72 nm</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><span style="background: #64748b; color: #000; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 11px;">EXONERATED_SPATIALLY_DISJOINT</span></td>
+            </tr>
+            
+            <tr>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">#4</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155; font-weight: 600;">BLUE HORIZON</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><code>240111003</code></td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">1001.0</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><strong>0.320</strong></td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;">21.88 nm</td>
+              <td style="padding: 8px; border-bottom: 1px solid #334155;"><span style="background: #64748b; color: #000; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 11px;">EXONERATED_SPATIALLY_DISJOINT</span></td>
+            </tr>
+            
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Counterfactual & Forecast -->
+    <div class="grid">
+      <div class="card">
+        <h3 class="card-title">6. Counterfactual Verification</h3>
+        <div class="metric-row">
+          <span class="metric-label">Simulation Status</span>
+          <span class="metric-value">COMPLETED</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Forward Overlap (IoU)</span>
+          <span class="metric-value">0.000</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Mean Trajectory Distance</span>
+          <span class="metric-value">0.00 km</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">7. Forward Drift Projection</h3>
+        <div class="metric-row">
+          <span class="metric-label">Forecast Horizon</span>
+          <span class="metric-value">12.0 hours</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Threat Level</span>
+          <span class="metric-value" style="color: #f59e0b;">MONITORED</span>
+        </div>
+        <div class="metric-row">
+          <span class="metric-label">Predicted Centroid</span>
+          <span class="metric-value">N/A</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="seal">
+      <div>
+        <strong>Cryptographic Chain of Custody:</strong><br>
+        SHA-256: <code style="color: #38bdf8;">DOSSIER_INC_S1_SPILL_TRI_20260926T093916Z (sealed upon compilation)</code>
+      </div>
+      <div>
+        AEGIS-SAR Autonomous Maritime Surveillance System<br>
+        SIH Problem Statement 26143
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "provider": "AISStream",
+  "query_timestamp": "2026-09-14T21:38:31Z",
+  "observation_count": 6,
+  "unique_vessels": 6,
+  "earliest_timestamp": "2026-09-14T21:38:17Z",
+  "latest_timestamp": "2026-09-14T21:38:28Z",
+  "spatial_extent": {
+    "min_lat": 35.8903,
+    "max_lat": 36.0081,
+    "min_lon": -5.9803,
+    "max_lon": -5.3019
+  },
+  "duplicate_rate": 0.0,
+  "missing_mmsi_rate": 0.0,
+  "missing_position_rate": 0.0,
+  "missing_sog_rate": 0.0,
+  "missing_cog_rate": 0.1667,
+  "invalid_coordinate_count": 0,
+  "invalid_timestamp_count": 0,
+  "large_gap_count": 0,
+  "kinematic_anomaly_count": 0,
+  "status": "VALIDATED"
+}

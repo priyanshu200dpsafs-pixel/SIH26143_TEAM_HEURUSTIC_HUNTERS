@@ -1,0 +1,63 @@
+{
+  "report_id": "DOSSIER_INC_S1A_ION_002B_20260916T214154Z",
+  "incident_id": "INC_S1A_ION_002B",
+  "created_at": "2026-09-16T21:41:54.795849+00:00",
+  "sha256_hash": "158e98dbb3ebdf9f1e8889b5742ba23bfe396404a728095d21f0a8f1fd24dc89",
+  "incident_snapshot": {
+    "incident_id": "INC_S1A_ION_002B",
+    "status": "FAILED",
+    "created_at": "2026-09-16T21:41:54Z",
+    "updated_at": "2026-09-16T21:41:54Z",
+    "region_name": "Mediterranean Testbed",
+    "satellite_observation": {
+      "product_id": "S1A_ION_002B",
+      "satellite_name": "Sentinel-1",
+      "sensor_type": "SAR C-Band",
+      "acquisition_time": "2024-08-24T17:22:05Z",
+      "bounding_box": [
+        19.2,
+        36.1,
+        19.8,
+        36.6
+      ],
+      "image_path": "",
+      "polarization": "VV",
+      "pixel_resolution_meters": 10.0,
+      "provenance": "REAL",
+      "source_identifier": "ESA Copernicus / Local Catalog"
+    },
+    "spill_observation": null,
+    "environmental_evidence": null,
+    "hindcast_result": null,
+    "candidates": [],
+    "top_candidate": null,
+    "counterfactual_result": null,
+    "forecast_result": null,
+    "reality_labels": {
+      "Satellite": "REAL ARCHIVED (Sentinel-1 SAR)",
+      "Environment": "REAL ARCHIVED (ERA5 hourly / OSCAR daily)",
+      "AIS": "SIMULATED REPLAY (Controlled Benchmark)",
+      "Hindcast": "INFERRED (RK4 Backward Advection-Diffusion)",
+      "Attribution": "MODEL-DERIVED (5-Factor Normalized)",
+      "Counterfactual": "INFERRED (Forward Perturbation Resilience)",
+      "Forecast": "INFERRED (RK4 Forward Forecast)"
+    },
+    "execution_log": [
+      {
+        "timestamp_utc": "2026-09-16T21:41:54Z",
+        "from_state": null,
+        "to_state": "NEW_PRODUCT",
+        "reason": "Initialization"
+      },
+      {
+        "timestamp_utc": "2026-09-16T21:41:54Z",
+        "from_state": "NEW_PRODUCT",
+        "to_state": "FAILED",
+        "reason": "SAR image file not found: None"
+      }
+    ],
+    "failure_reason": "SAR image file not found: None",
+    "attribution_status": null
+  },
+  "operator_notes": null
+}

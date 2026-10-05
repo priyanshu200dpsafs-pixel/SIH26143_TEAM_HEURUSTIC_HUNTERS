@@ -1,0 +1,111 @@
+[
+  {
+    "scenario_id": 1,
+    "scenario_name": "true_source_continuous_ais",
+    "top_candidate_name": "AEGEAN VOYAGER",
+    "top_candidate_mmsi": 240111001,
+    "composite_score": 0.825,
+    "attribution_decision": "PRIMARY_SUSPECT",
+    "ground_truth_name": "AEGEAN VOYAGER",
+    "ground_truth_mmsi": 240111001,
+    "passed": true,
+    "counterfactual": {
+      "offset_km": 0.88,
+      "iou": 0.211,
+      "score": 1.0,
+      "verdict": "HIGH_PHYSICAL_CONSISTENCY"
+    }
+  },
+  {
+    "scenario_id": 2,
+    "scenario_name": "true_source_ais_gap",
+    "top_candidate_name": "MEDITERRANEAN STAR",
+    "top_candidate_mmsi": 240222002,
+    "composite_score": 1.0,
+    "attribution_decision": "PRIMARY_SUSPECT",
+    "ground_truth_name": "MEDITERRANEAN STAR",
+    "ground_truth_mmsi": 240222002,
+    "passed": true,
+    "counterfactual": {
+      "offset_km": 0.88,
+      "iou": 0.211,
+      "score": 1.0,
+      "verdict": "HIGH_PHYSICAL_CONSISTENCY"
+    }
+  },
+  {
+    "scenario_id": 3,
+    "scenario_name": "innocent_vessel_ais_gap",
+    "top_candidate_name": "HELLAS LEADER",
+    "top_candidate_mmsi": 240333003,
+    "composite_score": 0.503,
+    "attribution_decision": "PLAUSIBLE_CANDIDATE",
+    "ground_truth_name": "UNKNOWN_VESSEL",
+    "ground_truth_mmsi": null,
+    "passed": true,
+    "counterfactual": {
+      "offset_km": 0.88,
+      "iou": 0.211,
+      "score": 1.0,
+      "verdict": "HIGH_PHYSICAL_CONSISTENCY"
+    }
+  },
+  {
+    "scenario_id": 4,
+    "scenario_name": "two_plausible_vessels",
+    "top_candidate_name": "OLYMPIC PIONEER",
+    "top_candidate_mmsi": 240444001,
+    "composite_score": 0.825,
+    "attribution_decision": "PRIMARY_SUSPECT",
+    "ground_truth_name": "OLYMPIC PIONEER",
+    "ground_truth_mmsi": 240444001,
+    "passed": true,
+    "counterfactual": {
+      "offset_km": 0.88,
+      "iou": 0.211,
+      "score": 1.0,
+      "verdict": "HIGH_PHYSICAL_CONSISTENCY"
+    }
+  },
+  {
+    "scenario_id": 5,
+    "scenario_name": "no_compatible_vessel_dark_fleet",
+    "top_candidate_name": "CMA CGM MED",
+    "top_candidate_mmsi": 240555003,
+    "composite_score": 0.332,
+    "attribution_decision": "INSUFFICIENT_EVIDENCE_EXONERATED",
+    "ground_truth_name": "DARK_FLEET_NON_BROADCASTING",
+    "ground_truth_mmsi": null,
+    "passed": true,
+    "counterfactual": null
+  },
+  {
+    "scenario_id": 6,
+    "scenario_name": "impossible_kinematics",
+    "top_candidate_name": "STELLA MARIS",
+    "top_candidate_mmsi": 240666002,
+    "composite_score": 0.346,
+    "attribution_decision": "INSUFFICIENT_EVIDENCE_EXONERATED",
+    "ground_truth_name": "UNKNOWN_VESSEL",
+    "ground_truth_mmsi": null,
+    "passed": true,
+    "counterfactual": null
+  },
+  {
+    "scenario_id": 7,
+    "scenario_name": "nearby_but_temporally_incompatible",
+    "top_candidate_name": "IONIAN SEA",
+    "top_candidate_mmsi": 240777001,
+    "composite_score": 0.559,
+    "attribution_decision": "PLAUSIBLE_CANDIDATE",
+    "ground_truth_name": "HISTORICAL_SPILL_UPSTREAM",
+    "ground_truth_mmsi": null,
+    "passed": true,
+    "counterfactual": {
+      "offset_km": 0.88,
+      "iou": 0.211,
+      "score": 1.0,
+      "verdict": "HIGH_PHYSICAL_CONSISTENCY"
+    }
+  }
+]

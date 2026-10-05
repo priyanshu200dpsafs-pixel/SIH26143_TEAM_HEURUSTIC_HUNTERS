@@ -1,0 +1,115 @@
+{
+  "smoke_test_timestamp": "2026-09-26T01:38:00Z",
+  "total_scenes_tested": 3,
+  "total_runtime_seconds": 0.376,
+  "results": [
+    {
+      "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+      "product_name": "S1A_IW_GRDH_1SDV_20240823T164734_20240823T164759_055343_06BFAC_153E.SAFE",
+      "acquisition_time": "2024-08-23T16:47:34.435651Z",
+      "download": "SUCCESS (Verified SAFE archive components & SHA-256)",
+      "preprocessing": {
+        "status": "SUCCESS",
+        "source_type": "ESA_IPF_BROWSE_RASTER",
+        "steps_count": 6,
+        "resolution_meters": [
+          50.0,
+          50.0
+        ],
+        "dynamic_range": [
+          0.0,
+          0.5960784554481506
+        ]
+      },
+      "unet_inference": {
+        "model_checkpoint": "models/sar_unet_baseline_best.pt",
+        "architecture": "UNetBaseline (4 Classes)",
+        "oil_pixels_detected": 36442
+      },
+      "result": "POTENTIAL_SPILL",
+      "incident_id": "INC_3BDFD698",
+      "geometry": {
+        "has_geometry": true,
+        "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+        "footprint_validation": "PASS"
+      },
+      "environment_link": "ALIGNED",
+      "ais_link": "INSUFFICIENT AIS COVERAGE (Real live stream)",
+      "provenance": "REAL",
+      "runtime_seconds": 0.182,
+      "errors": null
+    },
+    {
+      "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+      "product_name": "S1A_IW_GRDH_1SDV_20240824T044914_20240824T044939_055350_06BFE9_7539.SAFE",
+      "acquisition_time": "2024-08-24T04:49:14.769949Z",
+      "download": "SUCCESS (Verified SAFE archive components & SHA-256)",
+      "preprocessing": {
+        "status": "SUCCESS",
+        "source_type": "ESA_IPF_BROWSE_RASTER",
+        "steps_count": 6,
+        "resolution_meters": [
+          50.0,
+          50.0
+        ],
+        "dynamic_range": [
+          0.0,
+          0.5960784554481506
+        ]
+      },
+      "unet_inference": {
+        "model_checkpoint": "models/sar_unet_baseline_best.pt",
+        "architecture": "UNetBaseline (4 Classes)",
+        "oil_pixels_detected": 37157
+      },
+      "result": "POTENTIAL_SPILL",
+      "incident_id": "INC_5847827E",
+      "geometry": {
+        "has_geometry": true,
+        "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+        "footprint_validation": "PASS"
+      },
+      "environment_link": "ALIGNED",
+      "ais_link": "INSUFFICIENT AIS COVERAGE (Real live stream)",
+      "provenance": "REAL",
+      "runtime_seconds": 0.098,
+      "errors": null
+    },
+    {
+      "product_id": "e4626b95-8ed8-43d9-a2af-fb884315bdad",
+      "product_name": "S1A_IW_GRDH_1SDV_20240824T044939_20240824T045004_055350_06BFE9_DA7F.SAFE",
+      "acquisition_time": "2024-08-24T04:49:39.771157Z",
+      "download": "SUCCESS (Verified SAFE archive components & SHA-256)",
+      "preprocessing": {
+        "status": "SUCCESS",
+        "source_type": "ESA_IPF_BROWSE_RASTER",
+        "steps_count": 6,
+        "resolution_meters": [
+          50.0,
+          50.0
+        ],
+        "dynamic_range": [
+          0.0,
+          0.5960784554481506
+        ]
+      },
+      "unet_inference": {
+        "model_checkpoint": "models/sar_unet_baseline_best.pt",
+        "architecture": "UNetBaseline (4 Classes)",
+        "oil_pixels_detected": 42661
+      },
+      "result": "POTENTIAL_SPILL",
+      "incident_id": "INC_E4626B95",
+      "geometry": {
+        "has_geometry": true,
+        "geometry_hash": "4c01fc2badb73702bdcd0a33d68bb1ae54c8ce8b39ca6fafa67a0444f4ccccd6",
+        "footprint_validation": "PASS"
+      },
+      "environment_link": "ALIGNED",
+      "ais_link": "INSUFFICIENT AIS COVERAGE (Real live stream)",
+      "provenance": "REAL",
+      "runtime_seconds": 0.096,
+      "errors": null
+    }
+  ]
+}

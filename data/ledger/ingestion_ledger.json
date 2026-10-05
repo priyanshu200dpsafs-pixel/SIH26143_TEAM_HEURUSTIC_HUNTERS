@@ -1,0 +1,687 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-09-30T10:25:31Z",
+  "total_products_tracked": 34,
+  "entries": {
+    "S1A_MED_001A": {
+      "product_id": "S1A_MED_001A",
+      "product_name": "S1A_IW_GRDH_1SDV_20240823T094112_MED_A.SAFE",
+      "acquisition_start": "2024-08-23T09:41:12Z",
+      "acquisition_end": "2024-08-23T09:41:37Z",
+      "first_seen": "2024-08-23T09:45:00Z",
+      "processing_status": "INCIDENT_READY",
+      "incident_id": "INC_S1A_MED_001A",
+      "source_provider": "Copernicus Data Space (Sentinel-1A SAR)",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": "a1b2c3d4e5f6001a",
+      "details": "Staged SAR Scene A: Central Mediterranean Approaches.",
+      "updated_at": "2026-09-30T10:25:31Z",
+      "provenance": "REAL"
+    },
+    "S1A_ION_002B": {
+      "product_id": "S1A_ION_002B",
+      "product_name": "S1A_IW_GRDH_1SDV_20240824T172205_ION_B.SAFE",
+      "acquisition_start": "2024-08-24T17:22:05Z",
+      "acquisition_end": "2024-08-24T17:22:30Z",
+      "first_seen": "2024-08-24T17:25:00Z",
+      "processing_status": "INCIDENT_READY",
+      "incident_id": "INC_S1A_ION_002B",
+      "source_provider": "Copernicus Data Space (Sentinel-1A SAR)",
+      "spatial_bbox": [
+        19.2,
+        36.1,
+        19.8,
+        36.6
+      ],
+      "product_hash": "b2c3d4e5f6a1002b",
+      "details": "Staged SAR Scene B: Ionian Sea Maritime Corridor.",
+      "updated_at": "2026-09-26T06:16:44Z",
+      "provenance": "REAL"
+    },
+    "S1B_AEG_003C": {
+      "product_id": "S1B_AEG_003C",
+      "product_name": "S1B_IW_GRDH_1SDV_20240825T051530_AEG_C.SAFE",
+      "acquisition_start": "2024-08-25T05:15:30Z",
+      "acquisition_end": "2024-08-25T05:15:55Z",
+      "first_seen": "2024-08-25T05:18:00Z",
+      "processing_status": "NO_SPILL",
+      "incident_id": "INC_S1B_AEG_003C",
+      "source_provider": "Copernicus Data Space (Sentinel-1B SAR)",
+      "spatial_bbox": [
+        24.1,
+        35.8,
+        24.8,
+        36.4
+      ],
+      "product_hash": "c3d4e5f6a1b2003c",
+      "details": "Staged SAR Scene C: Aegean Sea Basin (Clean / Reference).",
+      "updated_at": "2024-08-25T05:18:00Z",
+      "provenance": "REAL"
+    },
+    "a21ac162-6574-4b85-80f4-612a9ebe2ec7": {
+      "product_id": "a21ac162-6574-4b85-80f4-612a9ebe2ec7",
+      "product_name": "S1C_IW_GRDH_1SDV_20260908T044827_20260908T044852_009351_012992_57DC_COG.SAFE",
+      "acquisition_start": "2026-09-08T04:48:27.960338Z",
+      "acquisition_end": "2026-09-08T04:48:52.957568Z",
+      "first_seen": "2026-09-13T16:14:52Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-13T16:14:52Z",
+      "provenance": "REAL"
+    },
+    "ec560a63-d015-4ce4-b5cf-5cca29c7d34b": {
+      "product_id": "ec560a63-d015-4ce4-b5cf-5cca29c7d34b",
+      "product_name": "S1C_IW_GRDH_1SDV_20260908T044827_20260908T044852_009351_012992_7281.SAFE",
+      "acquisition_start": "2026-09-08T04:48:27.960338Z",
+      "acquisition_end": "2026-09-08T04:48:52.957568Z",
+      "first_seen": "2026-09-13T16:16:06Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-13T16:16:06Z",
+      "provenance": "REAL"
+    },
+    "1b969388-235d-43e0-9b87-6c6efb18f960": {
+      "product_id": "1b969388-235d-43e0-9b87-6c6efb18f960",
+      "product_name": "S1D_IW_GRDH_1SDV_20260914T044841_20260914T044906_004569_008819_F031_COG.SAFE",
+      "acquisition_start": "2026-09-14T04:48:41.189271Z",
+      "acquisition_end": "2026-09-14T04:49:06.188037Z",
+      "first_seen": "2026-09-14T19:41:03Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T19:41:03Z",
+      "provenance": "REAL"
+    },
+    "d59a4cfb-f92d-4974-8a88-ad066b96d355": {
+      "product_id": "d59a4cfb-f92d-4974-8a88-ad066b96d355",
+      "product_name": "S1D_IW_GRDH_1SDV_20260914T044841_20260914T044906_004569_008819_D605.SAFE",
+      "acquisition_start": "2026-09-14T04:48:41.189271Z",
+      "acquisition_end": "2026-09-14T04:49:06.188037Z",
+      "first_seen": "2026-09-14T19:41:51Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T19:41:51Z",
+      "provenance": "REAL"
+    },
+    "a518a331-1f5a-4cce-afdd-b48323902de1": {
+      "product_id": "a518a331-1f5a-4cce-afdd-b48323902de1",
+      "product_name": "S1D_IW_GRDH_1SDV_20260913T164644_20260913T164709_004562_0087D6_453E_COG.SAFE",
+      "acquisition_start": "2026-09-13T16:46:44.266299Z",
+      "acquisition_end": "2026-09-13T16:47:09.265934Z",
+      "first_seen": "2026-09-14T19:42:16Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T19:42:16Z",
+      "provenance": "REAL"
+    },
+    "d279c14e-982c-43a6-97ab-58a5977d93d7": {
+      "product_id": "d279c14e-982c-43a6-97ab-58a5977d93d7",
+      "product_name": "S1D_IW_GRDH_1SDV_20260913T164644_20260913T164709_004562_0087D6_693B.SAFE",
+      "acquisition_start": "2026-09-13T16:46:44.266299Z",
+      "acquisition_end": "2026-09-13T16:47:09.265934Z",
+      "first_seen": "2026-09-14T19:59:07Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T19:59:07Z",
+      "provenance": "REAL"
+    },
+    "4e96d6f1-1690-4e2c-bbf1-601204b56193": {
+      "product_id": "4e96d6f1-1690-4e2c-bbf1-601204b56193",
+      "product_name": "S1C_IW_GRDH_1SDV_20260907T164621_20260907T164646_009344_01295C_7B07_COG.SAFE",
+      "acquisition_start": "2026-09-07T16:46:21.062936Z",
+      "acquisition_end": "2026-09-07T16:46:46.061322Z",
+      "first_seen": "2026-09-14T19:59:34Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T19:59:34Z",
+      "provenance": "REAL"
+    },
+    "f2543d2c-b497-4088-9d11-a69590d59583": {
+      "product_id": "f2543d2c-b497-4088-9d11-a69590d59583",
+      "product_name": "S1C_IW_GRDH_1SDV_20260907T164621_20260907T164646_009344_01295C_26DA.SAFE",
+      "acquisition_start": "2026-09-07T16:46:21.062936Z",
+      "acquisition_end": "2026-09-07T16:46:46.061322Z",
+      "first_seen": "2026-09-14T19:59:53Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T19:59:53Z",
+      "provenance": "REAL"
+    },
+    "25e1d66e-7da7-46e2-bfa4-14d57a390d44": {
+      "product_id": "25e1d66e-7da7-46e2-bfa4-14d57a390d44",
+      "product_name": "S1D_IW_GRDH_1SDV_20260902T044840_20260902T044905_004394_008200_FB7C_COG.SAFE",
+      "acquisition_start": "2026-09-02T04:48:40.569941Z",
+      "acquisition_end": "2026-09-02T04:49:05.568685Z",
+      "first_seen": "2026-09-14T19:59:57Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T19:59:57Z",
+      "provenance": "REAL"
+    },
+    "d87f7663-702d-4f1a-836a-50a0e39f0097": {
+      "product_id": "d87f7663-702d-4f1a-836a-50a0e39f0097",
+      "product_name": "S1D_IW_GRDH_1SDV_20260902T044840_20260902T044905_004394_008200_40D8.SAFE",
+      "acquisition_start": "2026-09-02T04:48:40.569941Z",
+      "acquisition_end": "2026-09-02T04:49:05.568685Z",
+      "first_seen": "2026-09-14T20:01:31Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T20:01:31Z",
+      "provenance": "REAL"
+    },
+    "526af6f3-de5b-499c-b803-b354c4864e9f": {
+      "product_id": "526af6f3-de5b-499c-b803-b354c4864e9f",
+      "product_name": "S1D_IW_GRDH_1SDV_20260901T164643_20260901T164708_004387_0081C1_0982.SAFE",
+      "acquisition_start": "2026-09-01T16:46:43.678062Z",
+      "acquisition_end": "2026-09-01T16:47:08.676115Z",
+      "first_seen": "2026-09-14T20:01:34Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T20:01:34Z",
+      "provenance": "REAL"
+    },
+    "b30e9a92-1a85-406a-aea4-332f2c198f84": {
+      "product_id": "b30e9a92-1a85-406a-aea4-332f2c198f84",
+      "product_name": "S1D_IW_GRDH_1SDV_20260901T164643_20260901T164708_004387_0081C1_B31F_COG.SAFE",
+      "acquisition_start": "2026-09-01T16:46:43.678062Z",
+      "acquisition_end": "2026-09-01T16:47:08.676115Z",
+      "first_seen": "2026-09-14T21:13:44Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T21:13:44Z",
+      "provenance": "REAL"
+    },
+    "425beb7a-ec21-4fef-bf92-8cf2ad1a8527": {
+      "product_id": "425beb7a-ec21-4fef-bf92-8cf2ad1a8527",
+      "product_name": "S1C_IW_GRDH_1SDV_20260827T044827_20260827T044852_009176_0123A8_BB08_COG.SAFE",
+      "acquisition_start": "2026-08-27T04:48:27.550133Z",
+      "acquisition_end": "2026-08-27T04:48:52.548797Z",
+      "first_seen": "2026-09-14T21:13:48Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T21:13:48Z",
+      "provenance": "REAL"
+    },
+    "c1627f9f-c8dd-4e81-8abc-eb8ba5200f38": {
+      "product_id": "c1627f9f-c8dd-4e81-8abc-eb8ba5200f38",
+      "product_name": "S1C_IW_GRDH_1SDV_20260827T044827_20260827T044852_009176_0123A8_312A.SAFE",
+      "acquisition_start": "2026-08-27T04:48:27.550133Z",
+      "acquisition_end": "2026-08-27T04:48:52.548797Z",
+      "first_seen": "2026-09-14T21:15:02Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T21:15:02Z",
+      "provenance": "REAL"
+    },
+    "603de2a8-a2b6-41c8-909c-7df00982f583": {
+      "product_id": "603de2a8-a2b6-41c8-909c-7df00982f583",
+      "product_name": "S1C_IW_GRDH_1SDV_20260826T164620_20260826T164645_009169_012370_51AA.SAFE",
+      "acquisition_start": "2026-08-26T16:46:20.647098Z",
+      "acquisition_end": "2026-08-26T16:46:45.645408Z",
+      "first_seen": "2026-09-14T21:15:57Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T21:15:57Z",
+      "provenance": "REAL"
+    },
+    "6b1a7f4b-f3f2-43e3-93f4-7d26725a6ede": {
+      "product_id": "6b1a7f4b-f3f2-43e3-93f4-7d26725a6ede",
+      "product_name": "S1C_IW_GRDH_1SDV_20260826T164620_20260826T164645_009169_012370_542B_COG.SAFE",
+      "acquisition_start": "2026-08-26T16:46:20.647098Z",
+      "acquisition_end": "2026-08-26T16:46:45.645408Z",
+      "first_seen": "2026-09-14T21:16:03Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T21:16:03Z",
+      "provenance": "REAL"
+    },
+    "1b030e41-6e4d-4573-9cf8-01c871e65aa8": {
+      "product_id": "1b030e41-6e4d-4573-9cf8-01c871e65aa8",
+      "product_name": "S1D_IW_GRDH_1SDV_20260821T044840_20260821T044905_004219_007BE0_937B_COG.SAFE",
+      "acquisition_start": "2026-08-21T04:48:40.065679Z",
+      "acquisition_end": "2026-08-21T04:49:05.064377Z",
+      "first_seen": "2026-09-14T21:17:10Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T21:17:10Z",
+      "provenance": "REAL"
+    },
+    "a88db8be-e394-4f34-940a-f3af829b7250": {
+      "product_id": "a88db8be-e394-4f34-940a-f3af829b7250",
+      "product_name": "S1D_IW_GRDH_1SDV_20260821T044840_20260821T044905_004219_007BE0_63D9.SAFE",
+      "acquisition_start": "2026-08-21T04:48:40.065679Z",
+      "acquisition_end": "2026-08-21T04:49:05.064377Z",
+      "first_seen": "2026-09-14T21:17:14Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T21:17:14Z",
+      "provenance": "REAL"
+    },
+    "24db28f2-3ac0-4c35-be72-c659fc6a0e12": {
+      "product_id": "24db28f2-3ac0-4c35-be72-c659fc6a0e12",
+      "product_name": "S1D_IW_GRDH_1SDV_20260820T164643_20260820T164708_004212_007B9B_CEB2_COG.SAFE",
+      "acquisition_start": "2026-08-20T16:46:43.137457Z",
+      "acquisition_end": "2026-08-20T16:47:08.135471Z",
+      "first_seen": "2026-09-14T21:40:19Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T21:40:19Z",
+      "provenance": "REAL"
+    },
+    "40c3480a-ec5d-4f95-91c0-f93130cd5330": {
+      "product_id": "40c3480a-ec5d-4f95-91c0-f93130cd5330",
+      "product_name": "S1D_IW_GRDH_1SDV_20260820T164643_20260820T164708_004212_007B9B_1AFC.SAFE",
+      "acquisition_start": "2026-08-20T16:46:43.137457Z",
+      "acquisition_end": "2026-08-20T16:47:08.135471Z",
+      "first_seen": "2026-09-14T21:40:25Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-14T21:40:25Z",
+      "provenance": "REAL"
+    },
+    "6957c413-a160-4082-b5ef-7f5a73b8f1a9": {
+      "product_id": "6957c413-a160-4082-b5ef-7f5a73b8f1a9",
+      "product_name": "S1C_IW_GRDH_1SDV_20260920T044828_20260920T044853_009526_012F4A_3C0F.SAFE",
+      "acquisition_start": "2026-09-20T04:48:28.021531Z",
+      "acquisition_end": "2026-09-20T04:48:53.018762Z",
+      "first_seen": "2026-09-22T14:48:18Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-22T14:48:18Z",
+      "provenance": "REAL"
+    },
+    "fb230264-508a-45dd-83a8-88d9a52d2987": {
+      "product_id": "fb230264-508a-45dd-83a8-88d9a52d2987",
+      "product_name": "S1C_IW_GRDH_1SDV_20260920T044828_20260920T044853_009526_012F4A_01C7_COG.SAFE",
+      "acquisition_start": "2026-09-20T04:48:28.021531Z",
+      "acquisition_end": "2026-09-20T04:48:53.018762Z",
+      "first_seen": "2026-09-22T14:48:26Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-22T14:48:26Z",
+      "provenance": "REAL"
+    },
+    "f0182f5f-5fd3-430b-bc33-1bcd6633eb1e": {
+      "product_id": "f0182f5f-5fd3-430b-bc33-1bcd6633eb1e",
+      "product_name": "S1C_IW_GRDH_1SDV_20260919T164621_20260919T164646_009519_012F0E_95EC_COG.SAFE",
+      "acquisition_start": "2026-09-19T16:46:21.088000Z",
+      "acquisition_end": "2026-09-19T16:46:46.086523Z",
+      "first_seen": "2026-09-22T14:54:23Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-22T14:54:23Z",
+      "provenance": "REAL"
+    },
+    "fea01fe4-ae13-45fb-a3ea-e4be6c319967": {
+      "product_id": "fea01fe4-ae13-45fb-a3ea-e4be6c319967",
+      "product_name": "S1C_IW_GRDH_1SDV_20260919T164621_20260919T164646_009519_012F0E_F602.SAFE",
+      "acquisition_start": "2026-09-19T16:46:21.088000Z",
+      "acquisition_end": "2026-09-19T16:46:46.086523Z",
+      "first_seen": "2026-09-22T14:54:37Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-22T14:54:37Z",
+      "provenance": "REAL"
+    },
+    "1d33e26d-889e-4055-ac49-d20a025676d5": {
+      "product_id": "1d33e26d-889e-4055-ac49-d20a025676d5",
+      "product_name": "S1D_IW_GRDH_1SDV_20260925T164644_20260925T164709_004737_008DD9_8E76_COG.SAFE",
+      "acquisition_start": "2026-09-25T16:46:44.423303Z",
+      "acquisition_end": "2026-09-25T16:47:09.421528Z",
+      "first_seen": "2026-09-25T19:28:28Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-25T19:28:29Z",
+      "provenance": "REAL"
+    },
+    "ce9a2f21-9279-4c0e-99e1-9a1098e3120a": {
+      "product_id": "ce9a2f21-9279-4c0e-99e1-9a1098e3120a",
+      "product_name": "S1D_IW_GRDH_1SDV_20260925T164644_20260925T164709_004737_008DD9_04A9.SAFE",
+      "acquisition_start": "2026-09-25T16:46:44.423303Z",
+      "acquisition_end": "2026-09-25T16:47:09.421528Z",
+      "first_seen": "2026-09-25T19:31:23Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-25T19:31:23Z",
+      "provenance": "REAL"
+    },
+    "3bdfd698-b3bb-47b2-920f-b18bc76643b3": {
+      "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+      "product_name": "S1A_IW_GRDH_1SDV_20240823T164734_20240823T164759_055343_06BFAC_153E.SAFE",
+      "acquisition_start": "2024-08-23T16:47:34.435651Z",
+      "acquisition_end": "2024-08-23T16:47:34.435651Z",
+      "first_seen": "2026-09-25T20:10:50Z",
+      "processing_status": "POTENTIAL_SPILL",
+      "incident_id": "INC_3BDFD698",
+      "source_provider": "Copernicus Data Space Ecosystem",
+      "spatial_bbox": [
+        16.685553,
+        33.440971,
+        19.84104,
+        35.36055
+      ],
+      "product_hash": "9eccef7edaf742834e3c69aad75a05562e65a57c4ebe3a9b7346bb329066453e",
+      "details": "Real Sentinel-1 IW GRD scene processed via UNetBaseline. Footprint validated.",
+      "updated_at": "2026-09-29T16:08:59Z",
+      "provenance": "REAL"
+    },
+    "5847827e-1714-4492-ab36-39c2913c7f79": {
+      "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+      "product_name": "S1A_IW_GRDH_1SDV_20240824T044914_20240824T044939_055350_06BFE9_7539.SAFE",
+      "acquisition_start": "2024-08-24T04:49:14.769949Z",
+      "acquisition_end": "2024-08-24T04:49:14.769949Z",
+      "first_seen": "2026-09-25T20:10:50Z",
+      "processing_status": "POTENTIAL_SPILL",
+      "incident_id": "INC_5847827E",
+      "source_provider": "Copernicus Data Space Ecosystem",
+      "spatial_bbox": [
+        16.708139,
+        34.65358,
+        19.912846,
+        36.571346
+      ],
+      "product_hash": "76b0255e12a554e7f31792f552ad71ceee97f09ebcec4b3a0c26c9bf185a813d",
+      "details": "Real Sentinel-1 IW GRD scene processed via UNetBaseline. Footprint validated.",
+      "updated_at": "2026-09-29T17:31:46Z",
+      "provenance": "REAL"
+    },
+    "e4626b95-8ed8-43d9-a2af-fb884315bdad": {
+      "product_id": "e4626b95-8ed8-43d9-a2af-fb884315bdad",
+      "product_name": "S1A_IW_GRDH_1SDV_20240824T044939_20240824T045004_055350_06BFE9_DA7F.SAFE",
+      "acquisition_start": "2024-08-24T04:49:39.771157Z",
+      "acquisition_end": "2024-08-24T04:49:39.771157Z",
+      "first_seen": "2026-09-25T20:10:50Z",
+      "processing_status": "POTENTIAL_SPILL",
+      "incident_id": "INC_E4626B95",
+      "source_provider": "Copernicus Data Space Ecosystem",
+      "spatial_bbox": [
+        16.408764,
+        33.148445,
+        19.555653,
+        35.068752
+      ],
+      "product_hash": "63265f0100d546a400233a13fd7b08901f265f29dffc91324b72007620e6ee39",
+      "details": "Real Sentinel-1 IW GRD scene processed via UNetBaseline. Footprint validated.",
+      "updated_at": "2026-09-26T06:05:47Z",
+      "provenance": "REAL"
+    },
+    "d536bd72-82b9-4fc3-ad35-dd486ab105ac": {
+      "product_id": "d536bd72-82b9-4fc3-ad35-dd486ab105ac",
+      "product_name": "S1D_IW_GRDH_1SDV_20260926T044841_20260926T044906_004744_008E16_33F7_COG.SAFE",
+      "acquisition_start": "2026-09-26T04:48:41.320737Z",
+      "acquisition_end": "2026-09-26T04:49:06.319510Z",
+      "first_seen": "2026-09-26T06:36:58Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-26T06:36:58Z",
+      "provenance": "REAL"
+    },
+    "fe115da6-4ec2-4459-b3bd-9bc93be0a066": {
+      "product_id": "fe115da6-4ec2-4459-b3bd-9bc93be0a066",
+      "product_name": "S1D_IW_GRDH_1SDV_20260926T044841_20260926T044906_004744_008E16_CCB0.SAFE",
+      "acquisition_start": "2026-09-26T04:48:41.320737Z",
+      "acquisition_end": "2026-09-26T04:49:06.319510Z",
+      "first_seen": "2026-09-26T06:37:04Z",
+      "processing_status": "UNSUPPORTED_PRODUCT",
+      "incident_id": null,
+      "source_provider": "Copernicus Data Space",
+      "spatial_bbox": [
+        18.1,
+        34.3,
+        18.6,
+        34.7
+      ],
+      "product_hash": null,
+      "details": "Product metadata discovered, but raster binary is not locally staged.",
+      "updated_at": "2026-09-26T06:37:04Z",
+      "provenance": "REAL"
+    }
+  }
+}

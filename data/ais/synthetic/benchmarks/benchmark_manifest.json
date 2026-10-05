@@ -1,0 +1,51 @@
+[
+  {
+    "scenario_id": 1,
+    "name": "true_source_continuous_ais",
+    "ais_file": "scenario_01_true_source_continuous_ais_ais.csv",
+    "meta_file": "scenario_01_true_source_continuous_ais_meta.json",
+    "truth_file": "scenario_01_true_source_continuous_ais_truth.json"
+  },
+  {
+    "scenario_id": 2,
+    "name": "true_source_ais_gap",
+    "ais_file": "scenario_02_true_source_ais_gap_ais.csv",
+    "meta_file": "scenario_02_true_source_ais_gap_meta.json",
+    "truth_file": "scenario_02_true_source_ais_gap_truth.json"
+  },
+  {
+    "scenario_id": 3,
+    "name": "innocent_vessel_ais_gap",
+    "ais_file": "scenario_03_innocent_vessel_ais_gap_ais.csv",
+    "meta_file": "scenario_03_innocent_vessel_ais_gap_meta.json",
+    "truth_file": "scenario_03_innocent_vessel_ais_gap_truth.json"
+  },
+  {
+    "scenario_id": 4,
+    "name": "two_plausible_vessels",
+    "ais_file": "scenario_04_two_plausible_vessels_ais.csv",
+    "meta_file": "scenario_04_two_plausible_vessels_meta.json",
+    "truth_file": "scenario_04_two_plausible_vessels_truth.json"
+  },
+  {
+    "scenario_id": 5,
+    "name": "no_compatible_vessel_dark_fleet",
+    "ais_file": "scenario_05_no_compatible_vessel_dark_fleet_ais.csv",
+    "meta_file": "scenario_05_no_compatible_vessel_dark_fleet_meta.json",
+    "truth_file": "scenario_05_no_compatible_vessel_dark_fleet_truth.json"
+  },
+  {
+    "scenario_id": 6,
+    "name": "impossible_kinematics",
+    "ais_file": "scenario_06_impossible_kinematics_ais.csv",
+    "meta_file": "scenario_06_impossible_kinematics_meta.json",
+    "truth_file": "scenario_06_impossible_kinematics_truth.json"
+  },
+  {
+    "scenario_id": 7,
+    "name": "nearby_but_temporally_incompatible",
+    "ais_file": "scenario_07_nearby_but_temporally_incompatible_ais.csv",
+    "meta_file": "scenario_07_nearby_but_temporally_incompatible_meta.json",
+    "truth_file": "scenario_07_nearby_but_temporally_incompatible_truth.json"
+  }
+]

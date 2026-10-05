@@ -1,0 +1,87 @@
+{
+  "comparison_metadata": {
+    "evaluation_name": "Sentinel-1 Real SAR vs U-Net Training Representation Audit",
+    "evaluated_checkpoint": "models/sar_unet_baseline_best.pt",
+    "training_dataset": "Krestenitis SAR Oil Spill Dataset (2019)",
+    "timestamp": "2026-09-26T01:32:00Z"
+  },
+  "training_representation": {
+    "format": "JPEG / PNG 8-bit RGB image chips",
+    "pixel_type": "uint8 (0 - 255)",
+    "dynamic_range": [
+      0,
+      255
+    ],
+    "input_channels": 3,
+    "channel_mean": [
+      137.2,
+      133.9,
+      124.1
+    ],
+    "channel_std": [
+      66.7,
+      59.4,
+      45.2
+    ],
+    "normalization_procedure": "x_norm = x.astype(float32) / 255.0 -> [0.0, 1.0]",
+    "spatial_resolution": "Nominal ~10-20m/px, pre-cropped tiles",
+    "image_dimensions": [
+      256,
+      256
+    ],
+    "polarization": "Pre-rendered RGB (VV/VH false color or grayscale mapped to 3 channels)",
+    "geometric_assumptions": "Cartesian pixel grid with geographic bounding box mapping"
+  },
+  "real_sentinel1_grd_representation": {
+    "raw_measurement_format": "GeoTIFF (BigTIFF, Level-1 GRD)",
+    "pixel_type": "uint16 (Digital Numbers)",
+    "dynamic_range": [
+      0,
+      65535
+    ],
+    "typical_ocean_dn_range": [
+      20,
+      600
+    ],
+    "input_channels": 1,
+    "spatial_resolution": "10m x 10m pixel spacing (IW GRDH)",
+    "image_dimensions": [
+      25643,
+      19443
+    ],
+    "polarization": "Separate single-band files (VV and VH)",
+    "crs": "None (slant-to-ground range with GCP table in annotation XML)",
+    "browse_quicklook_format": "PNG 8-bit RGB (~511x397 px), downsampled by ESA IPF"
+  },
+  "domain_mismatches_identified": [
+    {
+      "parameter": "Bit Depth & Dynamic Range",
+      "mismatch": "Raw GRD is 16-bit unsigned (0-65535 DN) vs Training 8-bit (0-255).",
+      "impact": "Direct feeding of raw DN causes total saturation in U-Net (values 100x above network norm).",
+      "resolution": "Percentile-based linear scaling [p2, p98] or radiometric sigma0 dB compression to [0.0, 1.0]."
+    },
+    {
+      "parameter": "Channel Dimension",
+      "mismatch": "Raw measurement is 1-band (VV) vs U-Net expecting 3 channels.",
+      "impact": "PyTorch convolution channel mismatch (expected 3, got 1).",
+      "resolution": "Channel duplication [VV, VV, VV] or dual-pol fusion [VV, VH, VV/VH ratio]."
+    },
+    {
+      "parameter": "Spatial Dimensions & Tiling",
+      "mismatch": "Raw scene is ~25000x19000 px vs U-Net 256x256 px.",
+      "impact": "Single full-scene tensor cannot fit in standard GPU/CPU memory.",
+      "resolution": "Tiling into 256x256 chips or multi-scale evaluation with overlap."
+    },
+    {
+      "parameter": "Georeferencing & Projections",
+      "mismatch": "Raw GRD has no projected CRS (stored with GCPs in XML).",
+      "impact": "Direct pixel-to-geographic projection requires GCP polynomial interpolation or product footprint bounding box mapping.",
+      "resolution": "Use product GeoFootprint polygon corners and tie-point interpolation to project detected pixels to WGS84."
+    }
+  ],
+  "compatibility_assessment": {
+    "direct_raw_grd_compatibility": "NOT CONNECTED (Requires Preprocessing Adapter)",
+    "adapter_enabled_compatibility": "CONNECTED (Via sentinel1_real_preprocessing.py)",
+    "generalization_warning": "Real Sentinel-1 compatibility demonstrated for tested IW GRD product representations. Model confidence may vary on scenes with different sea states or steep incidence angles."
+  }
+}

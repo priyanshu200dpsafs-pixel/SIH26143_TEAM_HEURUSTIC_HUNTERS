@@ -1,0 +1,84 @@
+{
+  "audit_version": "1.0.0",
+  "policy": "NO SCRAPING. NO FABRICATION. LEGITIMATE SOURCES ONLY.",
+  "scraped_sources_prohibited": [
+    "MarineTraffic Web",
+    "VesselFinder Web",
+    "MyShipTracking Web"
+  ],
+  "providers_audited": [
+    {
+      "provider": "NOAA / BOEM Marine Cadastre",
+      "coverage": "Complete U.S. Coastal Waters & Exclusive Economic Zone (EEZ)",
+      "historical_date_range": "2009 to 2024 (Monthly & Daily Archives)",
+      "geographic_coverage": "North America / US Waters (UTM Zones 01 to 20)",
+      "vessel_types": "All commercial and recreational transponders (Tanker, Cargo, Tug, Fishing, Passenger)",
+      "api_data_access": "Direct HTTPS machine-readable downloads (https://coast.noaa.gov/htdata/CMSP/AISDataHandler/)",
+      "authentication": "NONE (Open Public Domain)",
+      "terms_attribution": "U.S. Federal Government Public Domain / Attribution requested to NOAA-BOEM Marine Cadastre",
+      "download_query_capability": "Direct bulk CSV downloads and spatial-temporal Zone filtering. In-repo test archive verified (AIS_2017_01_Zone01.csv, 10,225 records, 58 vessels).",
+      "integration_status": "CONNECTED (Local Verified Reference Archive)"
+    },
+    {
+      "provider": "Danish Maritime Authority (DMA)",
+      "coverage": "Danish Territorial Waters, North Sea, Baltic Approaches, Skagerrak / Kattegat",
+      "historical_date_range": "2006 to present (Daily snapshots)",
+      "geographic_coverage": "Northern Europe / Scandinavian maritime corridors",
+      "vessel_types": "All vessels broadcasting AIS Class A and B",
+      "api_data_access": "HTTPS / FTP public data portal (https://dma.dk/safety-at-sea/navigational-information/ais-data)",
+      "authentication": "NONE (Danish Open Government Data)",
+      "terms_attribution": "Free use under Danish Open Data Terms with proper attribution",
+      "download_query_capability": "Daily CSV ZIP dumps containing minute-resolution transponder messages",
+      "integration_status": "DOCUMENTED_COMPLIANT (External Batch Endpoint)"
+    },
+    {
+      "provider": "Norwegian Coastal Administration (Kystverket)",
+      "coverage": "Norwegian EEZ, Barents Sea, Svalbard, North Sea",
+      "historical_date_range": "Historical archive files by month and year",
+      "geographic_coverage": "High-latitude Arctic and North Sea waters",
+      "vessel_types": "Commercial, offshore energy, and fishing vessels",
+      "api_data_access": "BarentsWatch API and Kystdata open download portal",
+      "authentication": "Open HTTP for archives; free API registration for real-time",
+      "terms_attribution": "Norwegian License for Open Government Data (NLOD)",
+      "download_query_capability": "Bulk CSV and REST endpoint downloads",
+      "integration_status": "DOCUMENTED_COMPLIANT"
+    },
+    {
+      "provider": "EMODnet Physics / Copernicus Marine (European Waters)",
+      "coverage": "European Regional Seas (Mediterranean, Black Sea, North Sea, Baltic Sea)",
+      "historical_date_range": "2015 to present",
+      "geographic_coverage": "Full Mediterranean Basin, Aegean Sea, Ionian Sea, Levantine Basin",
+      "vessel_types": "All IMO registered traffic",
+      "api_data_access": "ERDDAP REST API (https://erddap.emodnet-physics.eu/erddap/index.html) and WFS/WCS",
+      "authentication": "Copernicus Marine / CAS credentials (free scientific registration)",
+      "terms_attribution": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "download_query_capability": "Spatio-temporal ERDDAP bounding box queries returning NetCDF/CSV tabular records",
+      "integration_status": "DOCUMENTED_COMPLIANT (European Domain Authority)"
+    },
+    {
+      "provider": "Global Fishing Watch (GFW)",
+      "coverage": "Global maritime oceans",
+      "historical_date_range": "2012 to present",
+      "geographic_coverage": "Global international waters and EEZs",
+      "vessel_types": "Commercial fishing vessels, reefers, bunker vessels",
+      "api_data_access": "REST API v3 (https://gateway.globalfishingwatch.org/v3/)",
+      "authentication": "Bearer token (Free API key required)",
+      "terms_attribution": "GFW terms of use; non-commercial research use",
+      "download_query_capability": "Vessel search and track endpoint by date and bounding box",
+      "integration_status": "DOCUMENTED_COMPLIANT"
+    },
+    {
+      "provider": "Spire Maritime / ExactEarth / MarineTraffic Enterprise",
+      "coverage": "Global Satellite & Terrestrial AIS constellation",
+      "historical_date_range": "Historical archives spanning multiple years",
+      "geographic_coverage": "Global deep-sea coverage",
+      "vessel_types": "All transponders",
+      "api_data_access": "Proprietary REST / GraphQL API",
+      "authentication": "Paid Commercial Enterprise License ($$$)",
+      "terms_attribution": "Commercial proprietary contract",
+      "download_query_capability": "Query by MMSI, polygon, and time interval via REST",
+      "integration_status": "COMMERCIAL_RESTRICTED (Not open-access; excluded from free runtime)"
+    }
+  ],
+  "active_configured_provider": "HistoricalAISProvider (NOAA_MarineCadastre local archive + extensible format)"
+}

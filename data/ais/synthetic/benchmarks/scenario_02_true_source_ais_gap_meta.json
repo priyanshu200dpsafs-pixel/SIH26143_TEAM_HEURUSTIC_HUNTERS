@@ -1,0 +1,18 @@
+{
+  "scenario_id": 2,
+  "scenario_name": "true_source_ais_gap",
+  "description": "True culprit intentionally turns off AIS for 90 minutes while transiting the spill release location.",
+  "vessel_count": 3,
+  "total_records": 632,
+  "start_time": "2024-08-22T18:00:00Z",
+  "end_time": "2024-08-23T12:00:00Z",
+  "ais_file": "scenario_02_true_source_ais_gap_ais.csv",
+  "spill_observation": {
+    "observed_slick_centroid": [
+      18.35,
+      34.5
+    ],
+    "observation_time_iso": "2024-08-23T09:41:12Z",
+    "estimated_lookback_hours": 8.5
+  }
+}

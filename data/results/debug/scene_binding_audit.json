@@ -1,0 +1,2356 @@
+[
+  {
+    "audit_timestamp": "2026-09-16T21:41:09.748768+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-16T21:41:09.749324+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-16T21:41:09.749808+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-16T21:41:35.542539+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-16T21:41:35.543097+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-16T21:41:35.543804+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-16T21:42:00.075848+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-16T21:42:00.076178+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-16T21:42:00.078350+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-16T21:47:46.790418+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-16T21:47:46.791372+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-16T21:47:46.792309+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T14:47:43.677852+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T14:47:43.679539+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T14:47:43.680675+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T14:47:57.888428+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T14:47:57.889334+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T14:47:57.890327+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T14:48:31.409886+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T14:48:31.410731+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T14:48:31.428107+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:05:28.221420+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:05:28.221883+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:05:28.242026+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:06:41.115881+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:06:41.116817+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:06:41.118036+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:07:12.832341+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:07:12.832889+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:07:12.833690+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:09:14.373355+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:09:14.374171+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:09:14.375038+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:10:00.085722+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:10:00.086272+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:10:00.087168+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:11:59.656779+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:11:59.658428+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:11:59.659611+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:13:06.849931+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:13:06.851606+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-22T15:13:06.852860+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T19:28:51.344486+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-25T19:28:51.345770+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-25T19:28:51.347008+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T19:37:55.048865+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-25T19:37:55.049853+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-25T19:37:55.050920+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:11:30.659545+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:12:13.911659+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:12:13.912675+00:00",
+    "product_id": "e4626b95-8ed8-43d9-a2af-fb884315bdad",
+    "incident_id": "INC_E4626B95",
+    "acquisition_time": "2024-08-24T04:49:39.771157Z",
+    "spatial_bbox": [
+      16.408764,
+      33.148445,
+      19.555653,
+      35.068752
+    ],
+    "geometry_hash": "4c01fc2badb73702bdcd0a33d68bb1ae54c8ce8b39ca6fafa67a0444f4ccccd6",
+    "geometry_centroid": [
+      17.443672534804687,
+      34.10949864390625
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:19:38.090117+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:19:38.091268+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:23:13.342716+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:23:39.435489+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:23:56.473196+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:26:46.422861+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:27:10.234171+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:27:10.234970+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:27:10.242623+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:27:10.243473+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:27:10.244729+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:30:16.735813+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:31:15.152841+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:31:15.153637+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:31:15.159743+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:31:15.160539+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-25T20:31:15.161643+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:35:09.898681+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:35:09.899799+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:35:54.333495+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:35:54.334449+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:36:20.846964+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:36:20.848015+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:36:55.303764+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:36:55.304782+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:36:55.325581+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:36:55.326523+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:36:55.327810+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:48:48.910260+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:49:25.764827+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:49:25.765974+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:49:25.787234+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:49:25.788145+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:49:25.789493+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:55:30.371168+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:55:54.881367+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:55:54.882430+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:55:54.902586+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:55:54.903599+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-26T05:55:54.904919+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:08:22.930410+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "FAILED"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:12:49.088417+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:13:12.289592+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:15:03.283656+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:15:03.285060+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:16:44.291347+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:25:23.718965+00:00",
+    "product_id": "e4626b95-8ed8-43d9-a2af-fb884315bdad",
+    "incident_id": "INC_E4626B95",
+    "acquisition_time": "2024-08-24T04:49:39.771157Z",
+    "spatial_bbox": [
+      16.408764,
+      33.148445,
+      19.555653,
+      35.068752
+    ],
+    "geometry_hash": "4c01fc2badb73702bdcd0a33d68bb1ae54c8ce8b39ca6fafa67a0444f4ccccd6",
+    "geometry_centroid": [
+      17.443672534804687,
+      34.10949864390625
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:25:26.329920+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:25:27.767884+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:36:28.121304+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:36:28.122691+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:36:42.863730+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:36:42.865127+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:37:13.566734+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:37:13.568173+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:37:13.591669+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:37:13.593155+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:37:13.594992+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:41:25.805829+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T06:41:25.807453+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T08:20:02.621185+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T08:20:02.623064+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T09:11:52.210463+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T09:12:21.597807+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T09:12:21.599487+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T09:12:21.620186+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-26T09:12:21.621721+00:00",
+    "product_id": "S1A_ION_002B",
+    "incident_id": "INC_S1A_ION_002B",
+    "acquisition_time": "2024-08-24T17:22:05Z",
+    "spatial_bbox": [
+      19.2,
+      36.1,
+      19.8,
+      36.6
+    ],
+    "geometry_hash": "b8de53051b3c9a5bc48b9ea9c431c1892d554c0b5448cce4eaa853ad79487e14",
+    "geometry_centroid": [
+      19.4812265625,
+      36.3230078125
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-26T09:12:21.623423+00:00",
+    "product_id": "S1B_AEG_003C",
+    "incident_id": "INC_S1B_AEG_003C",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "spatial_bbox": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "geometry_hash": null,
+    "geometry_centroid": null,
+    "footprint_validation": "PASS",
+    "processing_status": "NO_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T09:39:05.081863+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-26T09:49:10.852726+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-27T09:26:41.972931+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-27T09:26:41.975260+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-27T09:35:48.280540+00:00",
+    "product_id": "3bdfd698-b3bb-47b2-920f-b18bc76643b3",
+    "incident_id": "INC_3BDFD698",
+    "acquisition_time": "2024-08-23T16:47:34.435651Z",
+    "spatial_bbox": [
+      16.685553,
+      33.440971,
+      19.84104,
+      35.36055
+    ],
+    "geometry_hash": "7b6dd0d71a74cd282fc91b009cb2bc7591ce35e93703f984bed5080a5ea186e5",
+    "geometry_centroid": [
+      17.557995851015622,
+      34.42033120777344
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-27T09:35:48.282366+00:00",
+    "product_id": "5847827e-1714-4492-ab36-39c2913c7f79",
+    "incident_id": "INC_5847827E",
+    "acquisition_time": "2024-08-24T04:49:14.769949Z",
+    "spatial_bbox": [
+      16.708139,
+      34.65358,
+      19.912846,
+      36.571346
+    ],
+    "geometry_hash": "422724ccfac5ef73557eaac514db5dc2d51d5f976ced9f4af92602ececbf6ba6",
+    "geometry_centroid": [
+      17.753799842617187,
+      35.56788992304687
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "POTENTIAL_SPILL"
+  },
+  {
+    "audit_timestamp": "2026-09-29T17:31:41.838855+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-29T17:31:43.079063+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  },
+  {
+    "audit_timestamp": "2026-09-30T10:25:31.895177+00:00",
+    "product_id": "S1A_MED_001A",
+    "incident_id": "INC_S1A_MED_001A",
+    "acquisition_time": "2024-08-23T09:41:12Z",
+    "spatial_bbox": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "geometry_hash": "b8f8a44b2a0d238f489a3aa26eadd8cd67727e5f617f12c65eb4a6b6addb46a2",
+    "geometry_centroid": [
+      18.125781250000003,
+      34.698515625000006
+    ],
+    "footprint_validation": "PASS",
+    "processing_status": "INCIDENT_READY"
+  }
+]

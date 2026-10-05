@@ -1,0 +1,75 @@
+{
+  "case_id": "mediterranean_case_001",
+  "region": "Central Mediterranean Sea (Ionian Sea / Peloponnese approaches)",
+  "verified_incident_event": false,
+  "incident_notes": "Co-registered multi-sensor environmental observation testbed. Optical, hourly atmospheric winds, and daily ocean currents provide same-date environmental forcing for 2024-08-23 over overlapping spatial coordinates. This scene does NOT represent an officially verified oil pollution accident ground truth.",
+  "sentinel2": {
+    "product_id": "S2A_MSIL2A_20240823T093031_N0511_R136_T33SYT_20240823T155251.SAFE",
+    "acquisition_timestamp": "2024-08-23T09:41:12Z",
+    "bounding_box": [
+      18.1,
+      34.3,
+      18.6,
+      34.7
+    ],
+    "cloud_percentage": 3.7,
+    "crs": "EPSG:4326",
+    "raster_shape": [
+      512,
+      512
+    ],
+    "band_count": 4,
+    "bands": [
+      "B02 (Blue)",
+      "B03 (Green)",
+      "B04 (Red)",
+      "B08 (NIR)"
+    ]
+  },
+  "era5_weather": {
+    "time_range": [
+      "2024-08-22T00:00:00.000000000",
+      "2024-08-24T23:00:00.000000000"
+    ],
+    "nominal_temporal_resolution": "1-hour interval",
+    "interpolation_target": "2024-08-23T09:41:12Z (interpolated from 09:00 and 10:00 UTC hourly slices)",
+    "time_steps": 72,
+    "spatial_bounds": [
+      17.0,
+      33.0,
+      20.0,
+      36.0
+    ],
+    "variables": [
+      "u10",
+      "v10"
+    ],
+    "crs": "EPSG:4326 (WGS84)"
+  },
+  "oscar_currents": {
+    "observation_date": "2024-08-23",
+    "nominal_temporal_resolution": "Daily average (24-hour composite / ~5-day smoothing window)",
+    "time_value": "2024-08-23 00:00:00",
+    "spatial_bounds": [
+      0.0,
+      0.0,
+      1439.0,
+      718.0
+    ],
+    "resolution": "0.25 degree global grid",
+    "variables": [
+      "u",
+      "v",
+      "ug",
+      "vg"
+    ],
+    "crs": "EPSG:4326 (WGS84)"
+  },
+  "alignment_audit": {
+    "temporal_relationship": "same-date environmental forcing",
+    "temporal_notes": "Sentinel-2 was acquired at 2024-08-23 09:41:12 UTC. ERA5 u10/v10 wind fields interpolate directly to this instantaneous acquisition timestamp. OSCAR surface currents represent a daily product (nominal 24-hour resolution) providing the background hydrodynamic current field for 2024-08-23. Not described as an instantaneous 0-hour exact match.",
+    "spatial_alignment": "Aligned. Sentinel-2 bounds [18.10°E, 34.30°N, 18.60°E, 34.70°N] are fully enclosed within the ERA5 spatial domain [17.00°E, 33.00°N, 20.00°E, 36.00°N] and OSCAR global grid.",
+    "s2_within_era5": true,
+    "s2_within_oscar": true
+  }
+}

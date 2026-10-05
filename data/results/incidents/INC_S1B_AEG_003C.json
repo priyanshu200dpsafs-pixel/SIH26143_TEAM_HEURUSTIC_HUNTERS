@@ -1,0 +1,83 @@
+{
+  "incident_id": "INC_S1B_AEG_003C",
+  "status": "NO_SPILL",
+  "created_at": "2026-09-22T15:06:26Z",
+  "updated_at": "2026-09-22T15:06:26Z",
+  "region_name": "Mediterranean Testbed",
+  "satellite_observation": {
+    "product_id": "S1B_AEG_003C",
+    "satellite_name": "Sentinel-1",
+    "sensor_type": "SAR C-Band",
+    "acquisition_time": "2024-08-25T05:15:30Z",
+    "bounding_box": [
+      24.1,
+      35.8,
+      24.8,
+      36.4
+    ],
+    "image_path": "data/satellite/sentinel1/S1B_AEG_003C.jpg",
+    "polarization": "VV",
+    "pixel_resolution_meters": 10.0,
+    "provenance": "REAL",
+    "source_identifier": "ESA Copernicus / Local Catalog"
+  },
+  "spill_observation": {
+    "detected": false,
+    "spill_id": null,
+    "area_pixels": 0,
+    "area_km2": 0.0,
+    "perimeter_km": 0.0,
+    "centroid": null,
+    "bounding_box": null,
+    "major_axis_km": 0.0,
+    "minor_axis_km": 0.0,
+    "orientation_deg": 0.0,
+    "compactness": 0.0,
+    "elongation": 0.0,
+    "model_confidence": 0.0,
+    "confidence_tier": "INSUFFICIENT",
+    "estimated_age_hours_fay": 0.0,
+    "polygon_geojson": null,
+    "raw_detections_count": 0,
+    "provenance": "INFERRED",
+    "source_identifier": "SAR U-Net Model + Morphology Extractor"
+  },
+  "environmental_evidence": null,
+  "hindcast_result": null,
+  "candidates": [],
+  "top_candidate": null,
+  "counterfactual_result": null,
+  "forecast_result": null,
+  "reality_labels": {
+    "Satellite": "REAL ARCHIVED (Sentinel-1 SAR)",
+    "Environment": "REAL ARCHIVED (ERA5 hourly / OSCAR daily)",
+    "AIS": "SIMULATED REPLAY (Controlled Benchmark)",
+    "Hindcast": "INFERRED (RK4 Backward Advection-Diffusion)",
+    "Attribution": "MODEL-DERIVED (5-Factor Normalized)",
+    "Counterfactual": "INFERRED (Forward Perturbation Resilience)",
+    "Forecast": "INFERRED (RK4 Forward Forecast)"
+  },
+  "execution_log": [
+    {
+      "timestamp_utc": "2026-09-22T15:06:26Z",
+      "from_state": null,
+      "to_state": "NEW_PRODUCT",
+      "reason": "Initialization"
+    },
+    {
+      "timestamp_utc": "2026-09-22T15:06:26Z",
+      "from_state": "NEW_PRODUCT",
+      "to_state": "PROCESSING",
+      "reason": "Starting SAR U-Net semantic segmentation"
+    },
+    {
+      "timestamp_utc": "2026-09-22T15:06:26Z",
+      "from_state": "PROCESSING",
+      "to_state": "NO_SPILL",
+      "reason": "Zero oil spill pixels detected by SAR model"
+    }
+  ],
+  "failure_reason": null,
+  "attribution_status": null,
+  "provenance_category": "REPLAY"
+}
